@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {"code": "000993", "name": "闽东电力", "market": "sz", "board": "main", "board_label": "深主板", "secid": "0.000993"},
+      {"code": "600664", "name": "哈药股份", "market": "sh", "board": "main", "board_label": "沪主板", "secid": "1.600664"},
+      {"code": "300750", "name": "宁德时代", "market": "sz", "board": "gem", "board_label": "创业板", "secid": "0.300750"}
+    ]
+  }
+}

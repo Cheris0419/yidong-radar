@@ -1,0 +1,33 @@
+name: selftest
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-engine:
+    name: Python 引擎历史快照自检
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 运行 28 项历史快照断言
+        run: python3 app.py --selftest
+
+  static-engine:
+    name: 静态在线版引擎回归
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: site/engine.js 与截图口径比对
+        run: node scripts/test_site_engine.js
