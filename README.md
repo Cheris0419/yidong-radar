@@ -20,6 +20,12 @@
 |---|---|
 | ![日间](docs/screenshots/mobile-light.png) | ![空态](docs/screenshots/empty.png) |
 
+**在线版（GitHub Pages，实时可用）**：
+
+| 在线版 · 移动端 | 在线版 · 桌面端 |
+|---|---|
+| ![在线版移动端](docs/screenshots/online-mobile.png) | ![在线版桌面端](docs/screenshots/online-desktop.png) |
+
 > 截图使用真实行情（收盘后形态 `T+1…T+10`）。交易时段展示 `T+0「当日」…T+9`。
 > `docs/reference.jpg` 为用户提供的参考小程序截图，仅用于 UI 口径对照，版权归原产品所有。
 
