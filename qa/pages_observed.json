@@ -1,0 +1,3539 @@
+{
+  "base": "https://cheris0419.github.io/yidong-radar/",
+  "generatedAt": "2026-11-13T01:04:59.488Z",
+  "cases": {
+    "600664": {
+      "payload": {
+        "ok": true,
+        "data": {
+          "stock": {
+            "code": "600664",
+            "name": "哈药股份",
+            "market": "sh",
+            "board": "main",
+            "board_label": "沪主板",
+            "secid": "1.600664",
+            "price": 5.68,
+            "prev_close": 5.68,
+            "pct": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "status": "pre_open",
+            "suspended": false
+          },
+          "index": {
+            "code": "000001",
+            "name": "上证指数",
+            "price": 3655.83,
+            "prev_close": 3655.83,
+            "pct": 0
+          },
+          "snapshot": {
+            "trade_date": "2026-11-13",
+            "time": "09:05:03",
+            "phase": "pre_open",
+            "is_trading_day": true,
+            "show_t0": true,
+            "updated_at": "2026-11-13T09:05:03+08:00"
+          },
+          "risk": {
+            "level": "safe",
+            "label": "安全",
+            "reasons": []
+          },
+          "summary": {
+            "dev10": {
+              "value": 2.33,
+              "threshold": 100,
+              "remaining": 97.67,
+              "progress": 0.0233,
+              "stock_change": 3.65,
+              "index_change": 1.32,
+              "window_start": "2026-11-03",
+              "window_end": "2026-11-13",
+              "base_close": 5.48,
+              "base_date": "2026-11-03",
+              "trigger_price": 11.03,
+              "level": "safe",
+              "label": "安全"
+            },
+            "dev30": {
+              "value": 7.25,
+              "threshold": 200,
+              "remaining": 192.75,
+              "progress": 0.0363,
+              "stock_change": 7.37,
+              "index_change": 0.12,
+              "window_start": "2026-10-29",
+              "window_end": "2026-11-13",
+              "base_close": 5.29,
+              "base_date": "2026-10-29",
+              "trigger_price": 15.88,
+              "level": "safe",
+              "label": "安全"
+            },
+            "same_dir": {
+              "count": 0,
+              "threshold": 4,
+              "remaining": 4,
+              "progress": 0,
+              "level": "safe",
+              "label": "安全",
+              "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+              "last_event": null,
+              "events": []
+            }
+          },
+          "reset": {
+            "reset10": "2026-08-07",
+            "reset30": "2026-09-04",
+            "last_trigger": {
+              "kind": "30d",
+              "date": "2026-08-20",
+              "value": 200.02
+            }
+          },
+          "rows": [
+            {
+              "key": "T+0",
+              "date": "2026-11-13",
+              "weekday": "周五",
+              "is_today": true,
+              "trigger_pct": 94.23,
+              "trigger_price": 11.03,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.03,
+                  "pct": 94.23,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+1",
+              "date": "2026-11-16",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 94.23,
+              "trigger_price": 11.03,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.03,
+                  "pct": 94.23,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+2",
+              "date": "2026-11-17",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 94.23,
+              "trigger_price": 11.03,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.03,
+                  "pct": 94.23,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+3",
+              "date": "2026-11-18",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 95.6,
+              "trigger_price": 11.11,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.11,
+                  "pct": 95.6,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+4",
+              "date": "2026-11-19",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 95.6,
+              "trigger_price": 11.11,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.11,
+                  "pct": 95.6,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+5",
+              "date": "2026-11-20",
+              "weekday": "周五",
+              "is_today": false,
+              "trigger_pct": 95.6,
+              "trigger_price": 11.11,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.11,
+                  "pct": 95.6,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+6",
+              "date": "2026-11-23",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 11.36,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.36,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+7",
+              "date": "2026-11-24",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 11.36,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.36,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+8",
+              "date": "2026-11-25",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 11.36,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.36,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+9",
+              "date": "2026-11-26",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 11.36,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 11.36,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 15.88,
+                  "pct": 179.51,
+                  "binding": false
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "index_label": "上证指数",
+            "row_horizon": 10,
+            "data_source": "同花顺 · 东方财富（浏览器直连）",
+            "data_note": "以下严重异动监管触发线，会根据指数进行变化",
+            "disclaimer": "本工具按公开交易规则辅助估算，不构成投资建议；是否构成异常波动 / 严重异常波动，以交易所认定及上市公司公告为准。"
+          }
+        }
+      },
+      "dom": {
+        "title": "哈药股份 600664 · 异动雷达",
+        "htmlTitle": "异动雷达 · 严重异动监管触发线（在线版）",
+        "dataView": "ready",
+        "htmlTheme": "dark",
+        "stockName": "哈药股份",
+        "stockCode": "600664",
+        "stockBoard": "沪主板",
+        "price": "5.68",
+        "pct": "0.00%",
+        "indexName": "上证指数",
+        "indexPrice": "3655.83",
+        "indexPct": "0.00%",
+        "risk": "安全",
+        "riskReasons": "",
+        "rows": [
+          {
+            "key": "T+0",
+            "date": "2026-11-13",
+            "pct": "94.23%",
+            "price": "触发价 11.03",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.03",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+1",
+            "date": "2026-11-16",
+            "pct": "94.23%",
+            "price": "触发价 11.03",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.03",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+2",
+            "date": "2026-11-17",
+            "pct": "94.23%",
+            "price": "触发价 11.03",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.03",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+3",
+            "date": "2026-11-18",
+            "pct": "95.60%",
+            "price": "触发价 11.11",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.11",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+4",
+            "date": "2026-11-19",
+            "pct": "95.60%",
+            "price": "触发价 11.11",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.11",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+5",
+            "date": "2026-11-20",
+            "pct": "95.60%",
+            "price": "触发价 11.11",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.11",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+6",
+            "date": "2026-11-23",
+            "pct": "100.00%",
+            "price": "触发价 11.36",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.36",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+7",
+            "date": "2026-11-24",
+            "pct": "100.00%",
+            "price": "触发价 11.36",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.36",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+8",
+            "date": "2026-11-25",
+            "pct": "100.00%",
+            "price": "触发价 11.36",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.36",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+9",
+            "date": "2026-11-26",
+            "pct": "100.00%",
+            "price": "触发价 11.36",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 11.36",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 15.88",
+                "binding": false
+              }
+            ]
+          }
+        ],
+        "readouts": [
+          {
+            "title": "10日 100% 偏离值",
+            "value": "2.33%",
+            "remaining": "距 +100% 还差 97.67%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "30日 200% 偏离值",
+            "value": "7.25%",
+            "remaining": "距 +200% 还差 192.75%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "10日同向异动红线",
+            "value": "0/4",
+            "remaining": "上涨同向已有 0 次，距离红线还差 4 次",
+            "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+            "event": "近 10 个交易日暂无计入的上涨同向异动。",
+            "level": "safe"
+          }
+        ],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
+        "noticeSub": "未开盘数据更新 09:05:03交易日 2026-11-13参考指数 上证指数",
+        "tableFoot": {
+          "hidden": false,
+          "text": "10 日线自 2026-08-07 起算 · 30 日线自 2026-09-04 起算 · 上次触发 30日 200% · 2026-08-20（偏离 +200.02%）"
+        },
+        "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
+        "footerUpdate": "2026-11-13 09:05:03",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      }
+    },
+    "688981": {
+      "payload": {
+        "ok": true,
+        "data": {
+          "stock": {
+            "code": "688981",
+            "name": "中芯国际",
+            "market": "sh",
+            "board": "star",
+            "board_label": "科创板",
+            "secid": "1.688981",
+            "price": 111.72,
+            "prev_close": 111.72,
+            "pct": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "status": "pre_open",
+            "suspended": false
+          },
+          "index": {
+            "code": "000001",
+            "name": "上证指数",
+            "price": 3655.83,
+            "prev_close": 3655.83,
+            "pct": 0
+          },
+          "snapshot": {
+            "trade_date": "2026-11-13",
+            "time": "09:05:04",
+            "phase": "pre_open",
+            "is_trading_day": true,
+            "show_t0": true,
+            "updated_at": "2026-11-13T09:05:04+08:00"
+          },
+          "risk": {
+            "level": "safe",
+            "label": "安全",
+            "reasons": []
+          },
+          "summary": {
+            "dev10": {
+              "value": 13.85,
+              "threshold": 100,
+              "remaining": 86.15,
+              "progress": 0.1385,
+              "stock_change": 15.43,
+              "index_change": 1.58,
+              "window_start": "2026-10-30",
+              "window_end": "2026-11-13",
+              "base_close": 96.79,
+              "base_date": "2026-10-30",
+              "trigger_price": 195.11,
+              "level": "safe",
+              "label": "安全"
+            },
+            "dev30": {
+              "value": 13.85,
+              "threshold": 200,
+              "remaining": 186.15,
+              "progress": 0.0692,
+              "stock_change": 15.43,
+              "index_change": 1.58,
+              "window_start": "2026-10-30",
+              "window_end": "2026-11-13",
+              "base_close": 96.79,
+              "base_date": "2026-10-30",
+              "trigger_price": 291.9,
+              "level": "safe",
+              "label": "安全"
+            },
+            "same_dir": {
+              "count": 0,
+              "threshold": 3,
+              "remaining": 3,
+              "progress": 0,
+              "level": "safe",
+              "label": "安全",
+              "rule": "连续3日累计偏离+30% · 严重异动红线：10日内3次上涨同向",
+              "last_event": null,
+              "events": []
+            }
+          },
+          "reset": {
+            "reset10": null,
+            "reset30": null,
+            "last_trigger": null
+          },
+          "rows": [
+            {
+              "key": "T+0",
+              "date": "2026-11-13",
+              "weekday": "周五",
+              "is_today": true,
+              "trigger_pct": 74.64,
+              "trigger_price": 195.11,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 195.11,
+                  "pct": 74.64,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+1",
+              "date": "2026-11-16",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 79.46,
+              "trigger_price": 200.49,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 200.49,
+                  "pct": 79.46,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+2",
+              "date": "2026-11-17",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 84.01,
+              "trigger_price": 205.57,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 205.57,
+                  "pct": 84.01,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+3",
+              "date": "2026-11-18",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 92.69,
+              "trigger_price": 215.27,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 215.27,
+                  "pct": 92.69,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+4",
+              "date": "2026-11-19",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 92.69,
+              "trigger_price": 215.27,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 215.27,
+                  "pct": 92.69,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+5",
+              "date": "2026-11-20",
+              "weekday": "周五",
+              "is_today": false,
+              "trigger_pct": 92.69,
+              "trigger_price": 215.27,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 215.27,
+                  "pct": 92.69,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+6",
+              "date": "2026-11-23",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 92.69,
+              "trigger_price": 215.27,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 215.27,
+                  "pct": 92.69,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+7",
+              "date": "2026-11-24",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 92.69,
+              "trigger_price": 215.27,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 215.27,
+                  "pct": 92.69,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+8",
+              "date": "2026-11-25",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 95.03,
+              "trigger_price": 217.88,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 217.88,
+                  "pct": 95.03,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+9",
+              "date": "2026-11-26",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 223.44,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 223.44,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 291.9,
+                  "pct": 161.28,
+                  "binding": false
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "index_label": "上证指数",
+            "row_horizon": 10,
+            "data_source": "同花顺 · 东方财富（浏览器直连）",
+            "data_note": "以下严重异动监管触发线，会根据指数进行变化",
+            "disclaimer": "本工具按公开交易规则辅助估算，不构成投资建议；是否构成异常波动 / 严重异常波动，以交易所认定及上市公司公告为准。"
+          }
+        }
+      },
+      "dom": {
+        "title": "中芯国际 688981 · 异动雷达",
+        "htmlTitle": "异动雷达 · 严重异动监管触发线（在线版）",
+        "dataView": "ready",
+        "htmlTheme": "dark",
+        "stockName": "中芯国际",
+        "stockCode": "688981",
+        "stockBoard": "科创板",
+        "price": "111.72",
+        "pct": "0.00%",
+        "indexName": "上证指数",
+        "indexPrice": "3655.83",
+        "indexPct": "0.00%",
+        "risk": "安全",
+        "riskReasons": "",
+        "rows": [
+          {
+            "key": "T+0",
+            "date": "2026-11-13",
+            "pct": "74.64%",
+            "price": "触发价 195.11",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 195.11",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+1",
+            "date": "2026-11-16",
+            "pct": "79.46%",
+            "price": "触发价 200.49",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 200.49",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+2",
+            "date": "2026-11-17",
+            "pct": "84.01%",
+            "price": "触发价 205.57",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 205.57",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+3",
+            "date": "2026-11-18",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+4",
+            "date": "2026-11-19",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+5",
+            "date": "2026-11-20",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+6",
+            "date": "2026-11-23",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+7",
+            "date": "2026-11-24",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+8",
+            "date": "2026-11-25",
+            "pct": "95.03%",
+            "price": "触发价 217.88",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 217.88",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+9",
+            "date": "2026-11-26",
+            "pct": "100.00%",
+            "price": "触发价 223.44",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 223.44",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          }
+        ],
+        "readouts": [
+          {
+            "title": "10日 100% 偏离值",
+            "value": "13.85%",
+            "remaining": "距 +100% 还差 86.15%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "30日 200% 偏离值",
+            "value": "13.85%",
+            "remaining": "距 +200% 还差 186.15%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "10日同向异动红线",
+            "value": "0/3",
+            "remaining": "上涨同向已有 0 次，距离红线还差 3 次",
+            "rule": "连续3日累计偏离+30% · 严重异动红线：10日内3次上涨同向",
+            "event": "近 10 个交易日暂无计入的上涨同向异动。",
+            "level": "safe"
+          }
+        ],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
+        "noticeSub": "未开盘数据更新 09:05:04交易日 2026-11-13参考指数 上证指数",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
+        "footerUpdate": "2026-11-13 09:05:04",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      }
+    },
+    "home": {
+      "dom": {
+        "title": "异动雷达 · 严重异动监管触发线",
+        "htmlTitle": "异动雷达 · 严重异动监管触发线（在线版）",
+        "dataView": "empty",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "—",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": false,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      }
+    },
+    "000993": {
+      "payload": {
+        "ok": true,
+        "data": {
+          "stock": {
+            "code": "000993",
+            "name": "闽东电力",
+            "market": "sz",
+            "board": "main",
+            "board_label": "深主板",
+            "secid": "0.000993",
+            "price": 12.35,
+            "prev_close": 12.35,
+            "pct": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "status": "pre_open",
+            "suspended": false
+          },
+          "index": {
+            "code": "399106",
+            "name": "深证综指",
+            "price": 2148.67,
+            "prev_close": 2148.67,
+            "pct": 0
+          },
+          "snapshot": {
+            "trade_date": "2026-11-13",
+            "time": "09:05:02",
+            "phase": "pre_open",
+            "is_trading_day": true,
+            "show_t0": true,
+            "updated_at": "2026-11-13T09:05:02+08:00"
+          },
+          "risk": {
+            "level": "safe",
+            "label": "安全",
+            "reasons": []
+          },
+          "summary": {
+            "dev10": {
+              "value": 7.83,
+              "threshold": 100,
+              "remaining": 92.17,
+              "progress": 0.0783,
+              "stock_change": 12.27,
+              "index_change": 4.44,
+              "window_start": "2026-10-30",
+              "window_end": "2026-11-13",
+              "base_close": 11,
+              "base_date": "2026-10-30",
+              "trigger_price": 22.49,
+              "level": "safe",
+              "label": "安全"
+            },
+            "dev30": {
+              "value": 7.83,
+              "threshold": 200,
+              "remaining": 192.17,
+              "progress": 0.0392,
+              "stock_change": 12.27,
+              "index_change": 4.44,
+              "window_start": "2026-10-30",
+              "window_end": "2026-11-13",
+              "base_close": 11,
+              "base_date": "2026-10-30",
+              "trigger_price": 33.49,
+              "level": "safe",
+              "label": "安全"
+            },
+            "same_dir": {
+              "count": 0,
+              "threshold": 4,
+              "remaining": 4,
+              "progress": 0,
+              "level": "safe",
+              "label": "安全",
+              "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+              "last_event": null,
+              "events": []
+            }
+          },
+          "reset": {
+            "reset10": "2026-10-15",
+            "reset30": "2026-10-15",
+            "last_trigger": {
+              "kind": "10d",
+              "date": "2026-09-22",
+              "value": 100.02
+            }
+          },
+          "rows": [
+            {
+              "key": "T+0",
+              "date": "2026-11-13",
+              "weekday": "周五",
+              "is_today": true,
+              "trigger_pct": 82.09,
+              "trigger_price": 22.49,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 22.49,
+                  "pct": 82.09,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+1",
+              "date": "2026-11-16",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 86.72,
+              "trigger_price": 23.06,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 23.06,
+                  "pct": 86.72,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+2",
+              "date": "2026-11-17",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 88.31,
+              "trigger_price": 23.26,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 23.26,
+                  "pct": 88.31,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+3",
+              "date": "2026-11-18",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 91.36,
+              "trigger_price": 23.63,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 23.63,
+                  "pct": 91.36,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+4",
+              "date": "2026-11-19",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 96.45,
+              "trigger_price": 24.26,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.26,
+                  "pct": 96.45,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+5",
+              "date": "2026-11-20",
+              "weekday": "周五",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+6",
+              "date": "2026-11-23",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 100.2,
+              "trigger_price": 24.73,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.73,
+                  "pct": 100.2,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+7",
+              "date": "2026-11-24",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+8",
+              "date": "2026-11-25",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+9",
+              "date": "2026-11-26",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "index_label": "深证综指",
+            "row_horizon": 10,
+            "data_source": "同花顺 · 东方财富（浏览器直连）",
+            "data_note": "以下严重异动监管触发线，会根据指数进行变化",
+            "disclaimer": "本工具按公开交易规则辅助估算，不构成投资建议；是否构成异常波动 / 严重异常波动，以交易所认定及上市公司公告为准。"
+          }
+        }
+      },
+      "dom": {
+        "title": "闽东电力 000993 · 异动雷达",
+        "htmlTitle": "异动雷达 · 严重异动监管触发线（在线版）",
+        "dataView": "ready",
+        "htmlTheme": "dark",
+        "stockName": "闽东电力",
+        "stockCode": "000993",
+        "stockBoard": "深主板",
+        "price": "12.35",
+        "pct": "0.00%",
+        "indexName": "深证综指",
+        "indexPrice": "2148.67",
+        "indexPct": "0.00%",
+        "risk": "安全",
+        "riskReasons": "",
+        "rows": [
+          {
+            "key": "T+0",
+            "date": "2026-11-13",
+            "pct": "82.09%",
+            "price": "触发价 22.49",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 22.49",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+1",
+            "date": "2026-11-16",
+            "pct": "86.72%",
+            "price": "触发价 23.06",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.06",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+2",
+            "date": "2026-11-17",
+            "pct": "88.31%",
+            "price": "触发价 23.26",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.26",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+3",
+            "date": "2026-11-18",
+            "pct": "91.36%",
+            "price": "触发价 23.63",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.63",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+4",
+            "date": "2026-11-19",
+            "pct": "96.45%",
+            "price": "触发价 24.26",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.26",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+5",
+            "date": "2026-11-20",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+6",
+            "date": "2026-11-23",
+            "pct": "100.20%",
+            "price": "触发价 24.73",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.73",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+7",
+            "date": "2026-11-24",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+8",
+            "date": "2026-11-25",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+9",
+            "date": "2026-11-26",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          }
+        ],
+        "readouts": [
+          {
+            "title": "10日 100% 偏离值",
+            "value": "7.83%",
+            "remaining": "距 +100% 还差 92.17%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "30日 200% 偏离值",
+            "value": "7.83%",
+            "remaining": "距 +200% 还差 192.17%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "10日同向异动红线",
+            "value": "0/4",
+            "remaining": "上涨同向已有 0 次，距离红线还差 4 次",
+            "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+            "event": "近 10 个交易日暂无计入的上涨同向异动。",
+            "level": "safe"
+          }
+        ],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
+        "noticeSub": "未开盘数据更新 09:05:02交易日 2026-11-13参考指数 深证综指",
+        "tableFoot": {
+          "hidden": false,
+          "text": "10 日线自 2026-10-15 起算 · 30 日线自 2026-10-15 起算 · 上次触发 10日 100% · 2026-09-22（偏离 +100.02%）"
+        },
+        "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
+        "footerUpdate": "2026-11-13 09:05:02",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      }
+    },
+    "error_999999": {
+      "dom": {
+        "title": "加载失败 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "error",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "999999",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取 999999 的触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": false,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "代码 999999。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorCode": "NOT_FOUND",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      },
+      "raw": {
+        "status": 404,
+        "contentType": "text/html; charset=utf-8",
+        "json": null,
+        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+      },
+      "apiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ],
+      "probeApiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        },
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ]
+    },
+    "error_123456": {
+      "dom": {
+        "title": "加载失败 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "error",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "123456",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取 123456 的触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": false,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "代码 123456。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorCode": "NOT_FOUND",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      },
+      "raw": {
+        "status": 404,
+        "contentType": "text/html; charset=utf-8",
+        "json": null,
+        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+      },
+      "apiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ],
+      "probeApiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        },
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ]
+    },
+    "error_920185": {
+      "dom": {
+        "title": "加载失败 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "error",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "920185",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取 920185 的触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": false,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "代码 920185。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorCode": "NOT_FOUND",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      },
+      "raw": {
+        "status": 404,
+        "contentType": "text/html; charset=utf-8",
+        "json": null,
+        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+      },
+      "apiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ],
+      "probeApiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        },
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ]
+    },
+    "error_900901": {
+      "dom": {
+        "title": "加载失败 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "error",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "900901",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取 900901 的触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": false,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "代码 900901。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorCode": "NOT_FOUND",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      },
+      "raw": {
+        "status": 404,
+        "contentType": "text/html; charset=utf-8",
+        "json": null,
+        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+      },
+      "apiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ],
+      "probeApiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        },
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ]
+    },
+    "error_abc": {
+      "dom": {
+        "title": "加载失败 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "error",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "—",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": false,
+        "errorTitle": "请检查股票代码",
+        "errorText": "代码 abc。输入 6 位 A 股代码，例如 000993。",
+        "errorCode": "BAD_CODE",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      },
+      "raw": {
+        "status": 404,
+        "contentType": "text/html; charset=utf-8",
+        "json": null,
+        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+      },
+      "apiReqs": [],
+      "probeApiReqs": [
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ]
+    },
+    "mobile_000993": {
+      "payload": {
+        "ok": true,
+        "data": {
+          "stock": {
+            "code": "000993",
+            "name": "闽东电力",
+            "market": "sz",
+            "board": "main",
+            "board_label": "深主板",
+            "secid": "0.000993",
+            "price": 12.35,
+            "prev_close": 12.35,
+            "pct": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "status": "pre_open",
+            "suspended": false
+          },
+          "index": {
+            "code": "399106",
+            "name": "深证综指",
+            "price": 2148.67,
+            "prev_close": 2148.67,
+            "pct": 0
+          },
+          "snapshot": {
+            "trade_date": "2026-11-13",
+            "time": "09:05:20",
+            "phase": "pre_open",
+            "is_trading_day": true,
+            "show_t0": true,
+            "updated_at": "2026-11-13T09:05:20+08:00"
+          },
+          "risk": {
+            "level": "safe",
+            "label": "安全",
+            "reasons": []
+          },
+          "summary": {
+            "dev10": {
+              "value": 7.83,
+              "threshold": 100,
+              "remaining": 92.17,
+              "progress": 0.0783,
+              "stock_change": 12.27,
+              "index_change": 4.44,
+              "window_start": "2026-10-30",
+              "window_end": "2026-11-13",
+              "base_close": 11,
+              "base_date": "2026-10-30",
+              "trigger_price": 22.49,
+              "level": "safe",
+              "label": "安全"
+            },
+            "dev30": {
+              "value": 7.83,
+              "threshold": 200,
+              "remaining": 192.17,
+              "progress": 0.0392,
+              "stock_change": 12.27,
+              "index_change": 4.44,
+              "window_start": "2026-10-30",
+              "window_end": "2026-11-13",
+              "base_close": 11,
+              "base_date": "2026-10-30",
+              "trigger_price": 33.49,
+              "level": "safe",
+              "label": "安全"
+            },
+            "same_dir": {
+              "count": 0,
+              "threshold": 4,
+              "remaining": 4,
+              "progress": 0,
+              "level": "safe",
+              "label": "安全",
+              "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+              "last_event": null,
+              "events": []
+            }
+          },
+          "reset": {
+            "reset10": "2026-10-15",
+            "reset30": "2026-10-15",
+            "last_trigger": {
+              "kind": "10d",
+              "date": "2026-09-22",
+              "value": 100.02
+            }
+          },
+          "rows": [
+            {
+              "key": "T+0",
+              "date": "2026-11-13",
+              "weekday": "周五",
+              "is_today": true,
+              "trigger_pct": 82.09,
+              "trigger_price": 22.49,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 22.49,
+                  "pct": 82.09,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+1",
+              "date": "2026-11-16",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 86.72,
+              "trigger_price": 23.06,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 23.06,
+                  "pct": 86.72,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+2",
+              "date": "2026-11-17",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 88.31,
+              "trigger_price": 23.26,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 23.26,
+                  "pct": 88.31,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+3",
+              "date": "2026-11-18",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 91.36,
+              "trigger_price": 23.63,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 23.63,
+                  "pct": 91.36,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+4",
+              "date": "2026-11-19",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 96.45,
+              "trigger_price": 24.26,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.26,
+                  "pct": 96.45,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+5",
+              "date": "2026-11-20",
+              "weekday": "周五",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+6",
+              "date": "2026-11-23",
+              "weekday": "周一",
+              "is_today": false,
+              "trigger_pct": 100.2,
+              "trigger_price": 24.73,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.73,
+                  "pct": 100.2,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+7",
+              "date": "2026-11-24",
+              "weekday": "周二",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+8",
+              "date": "2026-11-25",
+              "weekday": "周三",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            },
+            {
+              "key": "T+9",
+              "date": "2026-11-26",
+              "weekday": "周四",
+              "is_today": false,
+              "trigger_pct": 100,
+              "trigger_price": 24.7,
+              "trigger_rule": "10d",
+              "rules": [
+                {
+                  "key": "10d",
+                  "label": "10日 100%",
+                  "price": 24.7,
+                  "pct": 100,
+                  "binding": true
+                },
+                {
+                  "key": "30d",
+                  "label": "30日 200%",
+                  "price": 33.49,
+                  "pct": 171.16,
+                  "binding": false
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "index_label": "深证综指",
+            "row_horizon": 10,
+            "data_source": "同花顺 · 东方财富（浏览器直连）",
+            "data_note": "以下严重异动监管触发线，会根据指数进行变化",
+            "disclaimer": "本工具按公开交易规则辅助估算，不构成投资建议；是否构成异常波动 / 严重异常波动，以交易所认定及上市公司公告为准。"
+          }
+        }
+      },
+      "dom": {
+        "title": "闽东电力 000993 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "ready",
+        "htmlTheme": "dark",
+        "stockName": "闽东电力",
+        "stockCode": "000993",
+        "stockBoard": "深主板",
+        "price": "12.35",
+        "pct": "0.00%",
+        "indexName": "深证综指",
+        "indexPrice": "2148.67",
+        "indexPct": "0.00%",
+        "risk": "安全",
+        "riskReasons": "",
+        "rows": [
+          {
+            "key": "T+0",
+            "date": "2026-11-13",
+            "pct": "82.09%",
+            "price": "触发价 22.49",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 22.49",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+1",
+            "date": "2026-11-16",
+            "pct": "86.72%",
+            "price": "触发价 23.06",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.06",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+2",
+            "date": "2026-11-17",
+            "pct": "88.31%",
+            "price": "触发价 23.26",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.26",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+3",
+            "date": "2026-11-18",
+            "pct": "91.36%",
+            "price": "触发价 23.63",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.63",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+4",
+            "date": "2026-11-19",
+            "pct": "96.45%",
+            "price": "触发价 24.26",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.26",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+5",
+            "date": "2026-11-20",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+6",
+            "date": "2026-11-23",
+            "pct": "100.20%",
+            "price": "触发价 24.73",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.73",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+7",
+            "date": "2026-11-24",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+8",
+            "date": "2026-11-25",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+9",
+            "date": "2026-11-26",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          }
+        ],
+        "readouts": [
+          {
+            "title": "10日 100% 偏离值",
+            "value": "7.83%",
+            "remaining": "距 +100% 还差 92.17%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "30日 200% 偏离值",
+            "value": "7.83%",
+            "remaining": "距 +200% 还差 192.17%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "10日同向异动红线",
+            "value": "0/4",
+            "remaining": "上涨同向已有 0 次，距离红线还差 4 次",
+            "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+            "event": "近 10 个交易日暂无计入的上涨同向异动。",
+            "level": "safe"
+          }
+        ],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
+        "noticeSub": "未开盘数据更新 09:05:20交易日 2026-11-13参考指数 深证综指",
+        "tableFoot": {
+          "hidden": false,
+          "text": "10 日线自 2026-10-15 起算 · 30 日线自 2026-10-15 起算 · 上次触发 10日 100% · 2026-09-22（偏离 +100.02%）"
+        },
+        "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
+        "footerUpdate": "2026-11-13 09:05:20",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 390,
+          "innerW": 390
+        },
+        "staticMarker": true
+      }
+    },
+    "light": {
+      "dom": {
+        "title": "闽东电力 000993 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "ready",
+        "htmlTheme": "light",
+        "stockName": "闽东电力",
+        "stockCode": "000993",
+        "stockBoard": "深主板",
+        "price": "12.35",
+        "pct": "0.00%",
+        "indexName": "深证综指",
+        "indexPrice": "2148.67",
+        "indexPct": "0.00%",
+        "risk": "安全",
+        "riskReasons": "",
+        "rows": [
+          {
+            "key": "T+0",
+            "date": "2026-11-13",
+            "pct": "82.09%",
+            "price": "触发价 22.49",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 22.49",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+1",
+            "date": "2026-11-16",
+            "pct": "86.72%",
+            "price": "触发价 23.06",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.06",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+2",
+            "date": "2026-11-17",
+            "pct": "88.31%",
+            "price": "触发价 23.26",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.26",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+3",
+            "date": "2026-11-18",
+            "pct": "91.36%",
+            "price": "触发价 23.63",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 23.63",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+4",
+            "date": "2026-11-19",
+            "pct": "96.45%",
+            "price": "触发价 24.26",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.26",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+5",
+            "date": "2026-11-20",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+6",
+            "date": "2026-11-23",
+            "pct": "100.20%",
+            "price": "触发价 24.73",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.73",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+7",
+            "date": "2026-11-24",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+8",
+            "date": "2026-11-25",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+9",
+            "date": "2026-11-26",
+            "pct": "100.00%",
+            "price": "触发价 24.70",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 24.70",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 33.49",
+                "binding": false
+              }
+            ]
+          }
+        ],
+        "readouts": [
+          {
+            "title": "10日 100% 偏离值",
+            "value": "7.83%",
+            "remaining": "距 +100% 还差 92.17%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "30日 200% 偏离值",
+            "value": "7.83%",
+            "remaining": "距 +200% 还差 192.17%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "10日同向异动红线",
+            "value": "0/4",
+            "remaining": "上涨同向已有 0 次，距离红线还差 4 次",
+            "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+            "event": "近 10 个交易日暂无计入的上涨同向异动。",
+            "level": "safe"
+          }
+        ],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
+        "noticeSub": "未开盘数据更新 09:05:21交易日 2026-11-13参考指数 深证综指",
+        "tableFoot": {
+          "hidden": false,
+          "text": "10 日线自 2026-10-15 起算 · 30 日线自 2026-10-15 起算 · 上次触发 10日 100% · 2026-09-22（偏离 +100.02%）"
+        },
+        "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
+        "footerUpdate": "2026-11-13 09:05:21",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": true,
+        "searchOptions": [],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      }
+    }
+  },
+  "search": {
+    "star": {
+      "q": "中芯国际",
+      "payload": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "code": "688981",
+              "name": "中芯国际",
+              "market": "sh",
+              "board": "star",
+              "board_label": "科创板",
+              "secid": "1.688981"
+            }
+          ]
+        }
+      },
+      "options": [
+        "688981中芯国际科创板"
+      ]
+    },
+    "nh": {
+      "q": "nh",
+      "payload": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "code": "600377",
+              "name": "宁沪高速",
+              "market": "sh",
+              "board": "main",
+              "board_label": "沪主板",
+              "secid": "1.600377"
+            },
+            {
+              "code": "603093",
+              "name": "南华期货",
+              "market": "sh",
+              "board": "main",
+              "board_label": "沪主板",
+              "secid": "1.603093"
+            },
+            {
+              "code": "000504",
+              "name": "南华生物",
+              "market": "sz",
+              "board": "main",
+              "board_label": "深主板",
+              "secid": "0.000504"
+            },
+            {
+              "code": "300417",
+              "name": "南华仪器",
+              "market": "sz",
+              "board": "gem",
+              "board_label": "创业板",
+              "secid": "0.300417"
+            },
+            {
+              "code": "301046",
+              "name": "能辉科技",
+              "market": "sz",
+              "board": "gem",
+              "board_label": "创业板",
+              "secid": "0.301046"
+            },
+            {
+              "code": "600212",
+              "name": "绿能慧充",
+              "market": "sh",
+              "board": "main",
+              "board_label": "沪主板",
+              "secid": "1.600212"
+            },
+            {
+              "code": "600486",
+              "name": "扬农化工",
+              "market": "sh",
+              "board": "main",
+              "board_label": "沪主板",
+              "secid": "1.600486"
+            }
+          ]
+        }
+      },
+      "options": [
+        "600377宁沪高速沪主板",
+        "603093南华期货沪主板",
+        "000504南华生物深主板",
+        "300417南华仪器创业板",
+        "301046能辉科技创业板",
+        "600212绿能慧充沪主板",
+        "600486扬农化工沪主板"
+      ]
+    },
+    "rh": {
+      "q": "rh",
+      "payload": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "code": "000650",
+              "name": "仁和药业",
+              "market": "sz",
+              "board": "main",
+              "board_label": "深主板",
+              "secid": "0.000650"
+            },
+            {
+              "code": "002313",
+              "name": "日海智能",
+              "market": "sz",
+              "board": "main",
+              "board_label": "深主板",
+              "secid": "0.002313"
+            },
+            {
+              "code": "002997",
+              "name": "瑞鹄模具",
+              "market": "sz",
+              "board": "main",
+              "board_label": "深主板",
+              "secid": "0.002997"
+            },
+            {
+              "code": "300339",
+              "name": "润和软件",
+              "market": "sz",
+              "board": "gem",
+              "board_label": "创业板",
+              "secid": "0.300339"
+            },
+            {
+              "code": "300727",
+              "name": "润禾材料",
+              "market": "sz",
+              "board": "gem",
+              "board_label": "创业板",
+              "secid": "0.300727"
+            },
+            {
+              "code": "600311",
+              "name": "*ST荣华",
+              "market": "sh",
+              "board": "main",
+              "board_label": "沪主板",
+              "secid": "1.600311"
+            }
+          ]
+        }
+      },
+      "options": [
+        "000650仁和药业深主板",
+        "002313日海智能深主板",
+        "002997瑞鹄模具深主板",
+        "300339润和软件创业板",
+        "300727润禾材料创业板",
+        "600311*ST荣华沪主板"
+      ]
+    },
+    "bse": {
+      "q": "贝特瑞",
+      "payload": {
+        "ok": true,
+        "data": {
+          "items": [
+            {
+              "code": "920185",
+              "name": "贝特瑞",
+              "market": "bj",
+              "board": "bse",
+              "board_label": "北交所",
+              "secid": "0.920185"
+            }
+          ]
+        }
+      },
+      "options": [
+        "920185贝特瑞北交所"
+      ]
+    },
+    "starLoaded": {
+      "dom": {
+        "title": "中芯国际 688981 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "ready",
+        "htmlTheme": "dark",
+        "stockName": "中芯国际",
+        "stockCode": "688981",
+        "stockBoard": "科创板",
+        "price": "111.72",
+        "pct": "0.00%",
+        "indexName": "上证指数",
+        "indexPrice": "3655.83",
+        "indexPct": "0.00%",
+        "risk": "安全",
+        "riskReasons": "",
+        "rows": [
+          {
+            "key": "T+0",
+            "date": "2026-11-13",
+            "pct": "74.64%",
+            "price": "触发价 195.11",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 195.11",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+1",
+            "date": "2026-11-16",
+            "pct": "79.46%",
+            "price": "触发价 200.49",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 200.49",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+2",
+            "date": "2026-11-17",
+            "pct": "84.01%",
+            "price": "触发价 205.57",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 205.57",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+3",
+            "date": "2026-11-18",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+4",
+            "date": "2026-11-19",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+5",
+            "date": "2026-11-20",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+6",
+            "date": "2026-11-23",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+7",
+            "date": "2026-11-24",
+            "pct": "92.69%",
+            "price": "触发价 215.27",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 215.27",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+8",
+            "date": "2026-11-25",
+            "pct": "95.03%",
+            "price": "触发价 217.88",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 217.88",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          },
+          {
+            "key": "T+9",
+            "date": "2026-11-26",
+            "pct": "100.00%",
+            "price": "触发价 223.44",
+            "over": false,
+            "rules": [
+              {
+                "text": "10日 100%触发价 223.44",
+                "binding": true
+              },
+              {
+                "text": "30日 200%触发价 291.90",
+                "binding": false
+              }
+            ]
+          }
+        ],
+        "readouts": [
+          {
+            "title": "10日 100% 偏离值",
+            "value": "13.85%",
+            "remaining": "距 +100% 还差 86.15%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "30日 200% 偏离值",
+            "value": "13.85%",
+            "remaining": "距 +200% 还差 186.15%",
+            "rule": "",
+            "event": "",
+            "level": "safe"
+          },
+          {
+            "title": "10日同向异动红线",
+            "value": "0/3",
+            "remaining": "上涨同向已有 0 次，距离红线还差 3 次",
+            "rule": "连续3日累计偏离+30% · 严重异动红线：10日内3次上涨同向",
+            "event": "近 10 个交易日暂无计入的上涨同向异动。",
+            "level": "safe"
+          }
+        ],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
+        "noticeSub": "未开盘数据更新 09:05:18交易日 2026-11-13参考指数 上证指数",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
+        "footerUpdate": "2026-11-13 09:05:18",
+        "errorViewHidden": true,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
+        "errorCode": "—",
+        "emptyViewHidden": true,
+        "searchOptions": [
+          "688981中芯国际科创板"
+        ],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      }
+    },
+    "bseSelected": {
+      "dom": {
+        "title": "加载失败 · 异动雷达",
+        "htmlTitle": "",
+        "dataView": "error",
+        "htmlTheme": "dark",
+        "stockName": "加载中",
+        "stockCode": "920185",
+        "stockBoard": "—",
+        "price": "—",
+        "pct": "—",
+        "indexName": "—",
+        "indexPrice": "—",
+        "indexPct": "—",
+        "risk": "—",
+        "riskReasons": "",
+        "rows": [],
+        "readouts": [],
+        "closeChip": {
+          "hidden": true,
+          "text": "已收盘 · 展示下一交易日起触发线"
+        },
+        "noticeMain": "正在获取 920185 的触发线…",
+        "noticeSub": "",
+        "tableFoot": {
+          "hidden": true,
+          "text": ""
+        },
+        "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
+        "footerUpdate": "—",
+        "errorViewHidden": false,
+        "errorTitle": "未找到该股票代码，请检查输入",
+        "errorText": "代码 920185。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorCode": "NOT_FOUND",
+        "emptyViewHidden": true,
+        "searchOptions": [
+          "920185贝特瑞北交所"
+        ],
+        "searchPanelHidden": true,
+        "overflow": {
+          "scrollW": 1280,
+          "innerW": 1280
+        },
+        "staticMarker": true
+      },
+      "raw": {
+        "status": 404,
+        "contentType": "text/html; charset=utf-8",
+        "json": null,
+        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+      },
+      "apiReqs": [
+        {
+          "path": "/api/suggest/get",
+          "status": 200
+        },
+        {
+          "path": "/api/triggers",
+          "status": 404
+        },
+        {
+          "path": "/api/triggers",
+          "status": 404
+        }
+      ]
+    }
+  },
+  "console": {
+    "consoleErrors": [],
+    "logErrors": [],
+    "exceptions": [],
+    "netErrors": []
+  },
+  "network": {
+    "hosts": {
+      "cheris0419.github.io": 142,
+      "d.10jqka.com.cn": 24,
+      "searchapi.eastmoney.com": 6
+    },
+    "badResponses": [
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=999999",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=999999",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=123456",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=123456",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=920185",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=920185",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=900901",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=900901",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=abc",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=920185",
+        "status": 404,
+        "type": "Fetch"
+      },
+      {
+        "url": "https://cheris0419.github.io/api/triggers?code=920185",
+        "status": 404,
+        "type": "Fetch"
+      }
+    ],
+    "total": 172
+  }
+}

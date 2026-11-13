@@ -1,0 +1,745 @@
+{
+  "generatedAt": "2026-11-13T01:04:57.010Z",
+  "A": {
+    "label": "A 000993 @ 2026-09-18 09:54:36",
+    "inputs": {
+      "price": 19.77,
+      "indexPrice": 2491.4,
+      "prevClose": 17.97,
+      "showT0": true,
+      "board": "main",
+      "market": "sz",
+      "seriesLen": 107,
+      "futureDates": [
+        "20260921",
+        "20260922",
+        "20260923",
+        "20260924",
+        "20260928",
+        "20260929",
+        "20260930",
+        "20261008",
+        "20261009"
+      ]
+    },
+    "result": {
+      "summary": {
+        "dev10": {
+          "value": 90.96,
+          "threshold": 100,
+          "remaining": 9.04,
+          "progress": 0.9096,
+          "stock_change": 89.55,
+          "index_change": -1.41,
+          "window_start": "2026-09-08",
+          "window_end": "2026-09-18",
+          "base_close": 10.43,
+          "base_date": "2026-09-08",
+          "trigger_price": 20.71,
+          "level": "high",
+          "label": "高危"
+        },
+        "dev30": {
+          "value": 105.93,
+          "threshold": 200,
+          "remaining": 94.07,
+          "progress": 0.5296,
+          "stock_change": 105.3,
+          "index_change": -0.63,
+          "window_start": "2026-08-19",
+          "window_end": "2026-09-18",
+          "base_close": 9.63,
+          "base_date": "2026-08-19",
+          "trigger_price": 28.83,
+          "level": "watch",
+          "label": "关注"
+        },
+        "same_dir": {
+          "count": 3,
+          "threshold": 4,
+          "remaining": 1,
+          "progress": 0.75,
+          "level": "high",
+          "label": "高危",
+          "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+          "last_event": {
+            "baseIdx": 102,
+            "endIdx": 104,
+            "start": "2026-09-15",
+            "end": "2026-09-16",
+            "pct": 20.53
+          },
+          "events": [
+            {
+              "baseIdx": 98,
+              "endIdx": 100,
+              "start": "2026-09-09",
+              "end": "2026-09-10",
+              "pct": 21.98
+            },
+            {
+              "baseIdx": 100,
+              "endIdx": 102,
+              "start": "2026-09-11",
+              "end": "2026-09-14",
+              "pct": 22.51
+            },
+            {
+              "baseIdx": 102,
+              "endIdx": 104,
+              "start": "2026-09-15",
+              "end": "2026-09-16",
+              "pct": 20.53
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "high",
+        "label": "高危",
+        "reasons": [
+          "10日偏离值 90.96%（阈值 100%）",
+          "30日偏离值 105.93%（阈值 200%）",
+          "10日同向异动 3/4"
+        ]
+      },
+      "reset": {
+        "reset10": null,
+        "reset30": null,
+        "last_trigger": null
+      },
+      "rows": [
+        {
+          "key": "T+0",
+          "date": "2026-09-18",
+          "weekday": "周五",
+          "is_today": true,
+          "trigger_pct": 15.27,
+          "trigger_price": 20.71,
+          "trigger_rule": "10d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 20.71,
+              "pct": 15.27,
+              "binding": true
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 60.43,
+              "binding": false
+            },
+            {
+              "key": "same",
+              "label": "十日同向异动线",
+              "price": 21.71,
+              "pct": 20.81,
+              "binding": false
+            }
+          ]
+        },
+        {
+          "key": "T+1",
+          "date": "2026-09-21",
+          "weekday": "周一",
+          "is_today": false,
+          "trigger_pct": 4.77,
+          "trigger_price": 20.71,
+          "trigger_rule": "10d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 20.71,
+              "pct": 4.77,
+              "binding": true
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": false
+            },
+            {
+              "key": "same",
+              "label": "十日同向异动线",
+              "price": 21.71,
+              "pct": 9.81,
+              "binding": false
+            }
+          ]
+        },
+        {
+          "key": "T+2",
+          "date": "2026-09-22",
+          "weekday": "周二",
+          "is_today": false,
+          "trigger_pct": 4.77,
+          "trigger_price": 20.71,
+          "trigger_rule": "10d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 20.71,
+              "pct": 4.77,
+              "binding": true
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": false
+            },
+            {
+              "key": "same",
+              "label": "十日同向异动线",
+              "price": 23.72,
+              "pct": 20,
+              "binding": false
+            }
+          ]
+        },
+        {
+          "key": "T+3",
+          "date": "2026-09-23",
+          "weekday": "周三",
+          "is_today": false,
+          "trigger_pct": 15.24,
+          "trigger_price": 22.78,
+          "trigger_rule": "10d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 22.78,
+              "pct": 15.24,
+              "binding": true
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": false
+            },
+            {
+              "key": "same",
+              "label": "十日同向异动线",
+              "price": 23.72,
+              "pct": 20,
+              "binding": false
+            }
+          ]
+        },
+        {
+          "key": "T+4",
+          "date": "2026-09-24",
+          "weekday": "周四",
+          "is_today": false,
+          "trigger_pct": 27.4,
+          "trigger_price": 25.19,
+          "trigger_rule": "10d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 25.19,
+              "pct": 27.4,
+              "binding": true
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": false
+            }
+          ]
+        },
+        {
+          "key": "T+5",
+          "date": "2026-09-28",
+          "weekday": "周一",
+          "is_today": false,
+          "trigger_pct": 41.14,
+          "trigger_price": 27.9,
+          "trigger_rule": "10d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 27.9,
+              "pct": 41.14,
+              "binding": true
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": false
+            }
+          ]
+        },
+        {
+          "key": "T+6",
+          "date": "2026-09-29",
+          "weekday": "周二",
+          "is_today": false,
+          "trigger_pct": 45.82,
+          "trigger_price": 28.83,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 30.71,
+              "pct": 55.33,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+7",
+          "date": "2026-09-30",
+          "weekday": "周三",
+          "is_today": false,
+          "trigger_pct": 45.82,
+          "trigger_price": 28.83,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 33.93,
+              "pct": 71.6,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+8",
+          "date": "2026-10-08",
+          "weekday": "周四",
+          "is_today": false,
+          "trigger_pct": 45.82,
+          "trigger_price": 28.83,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 36.09,
+              "pct": 82.53,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.83,
+              "pct": 45.82,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+9",
+          "date": "2026-10-09",
+          "weekday": "周五",
+          "is_today": false,
+          "trigger_pct": 46.41,
+          "trigger_price": 28.95,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 36.09,
+              "pct": 82.53,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 28.95,
+              "pct": 46.41,
+              "binding": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "B": {
+    "label": "B 600664 @ 2026-08-13 18:20",
+    "inputs": {
+      "price": 8.86,
+      "indexPrice": 3926.96,
+      "prevClose": 8.81,
+      "showT0": false,
+      "board": "main",
+      "market": "sh",
+      "seriesLen": 81,
+      "futureDates": [
+        "20260814",
+        "20260817",
+        "20260818",
+        "20260819",
+        "20260820",
+        "20260821",
+        "20260824",
+        "20260825",
+        "20260826",
+        "20260827"
+      ]
+    },
+    "result": {
+      "summary": {
+        "dev10": {
+          "value": 29.86,
+          "threshold": 100,
+          "remaining": 70.14,
+          "progress": 0.2986,
+          "stock_change": 29.53,
+          "index_change": -0.33,
+          "window_start": "2026-08-07",
+          "window_end": "2026-08-13",
+          "base_close": 6.84,
+          "base_date": "2026-08-07",
+          "trigger_price": 13.66,
+          "level": "safe",
+          "label": "安全"
+        },
+        "dev30": {
+          "value": 192.26,
+          "threshold": 200,
+          "remaining": 7.74,
+          "progress": 0.9613,
+          "stock_change": 189.54,
+          "index_change": -2.72,
+          "window_start": "2026-07-09",
+          "window_end": "2026-08-13",
+          "base_close": 3.06,
+          "base_date": "2026-07-09",
+          "trigger_price": 9.1,
+          "level": "high",
+          "label": "高危"
+        },
+        "same_dir": {
+          "count": 1,
+          "threshold": 4,
+          "remaining": 3,
+          "progress": 0.25,
+          "level": "watch",
+          "label": "关注",
+          "rule": "连续3日累计偏离+20% · 严重异动红线：10日内4次上涨同向",
+          "last_event": {
+            "baseIdx": 76,
+            "endIdx": 78,
+            "start": "2026-08-10",
+            "end": "2026-08-11",
+            "pct": 21.06
+          },
+          "events": [
+            {
+              "baseIdx": 76,
+              "endIdx": 78,
+              "start": "2026-08-10",
+              "end": "2026-08-11",
+              "pct": 21.06
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "high",
+        "label": "高危",
+        "reasons": [
+          "30日偏离值 192.26%（阈值 200%）",
+          "10日同向异动 1/4"
+        ]
+      },
+      "reset": {
+        "reset10": "2026-08-07",
+        "reset30": null,
+        "last_trigger": {
+          "kind": "10d",
+          "date": "2026-07-23",
+          "value": 100.04
+        }
+      },
+      "rows": [
+        {
+          "key": "T+1",
+          "date": "2026-08-14",
+          "weekday": "周五",
+          "is_today": false,
+          "trigger_pct": 2.67,
+          "trigger_price": 9.1,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 13.66,
+              "pct": 54.15,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 9.1,
+              "pct": 2.67,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+2",
+          "date": "2026-08-17",
+          "weekday": "周一",
+          "is_today": false,
+          "trigger_pct": 2.67,
+          "trigger_price": 9.1,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 13.66,
+              "pct": 54.15,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 9.1,
+              "pct": 2.67,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+3",
+          "date": "2026-08-18",
+          "weekday": "周二",
+          "is_today": false,
+          "trigger_pct": 2.67,
+          "trigger_price": 9.1,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 13.66,
+              "pct": 54.15,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 9.1,
+              "pct": 2.67,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+4",
+          "date": "2026-08-19",
+          "weekday": "周三",
+          "is_today": false,
+          "trigger_pct": 2.67,
+          "trigger_price": 9.1,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 13.66,
+              "pct": 54.15,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 9.1,
+              "pct": 2.67,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+5",
+          "date": "2026-08-20",
+          "weekday": "周四",
+          "is_today": false,
+          "trigger_pct": 2.67,
+          "trigger_price": 9.1,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 13.66,
+              "pct": 54.15,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 9.1,
+              "pct": 2.67,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+6",
+          "date": "2026-08-21",
+          "weekday": "周五",
+          "is_today": false,
+          "trigger_pct": 13.45,
+          "trigger_price": 10.05,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 13.66,
+              "pct": 54.15,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 10.05,
+              "pct": 13.45,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+7",
+          "date": "2026-08-24",
+          "weekday": "周一",
+          "is_today": false,
+          "trigger_pct": 25.76,
+          "trigger_price": 11.14,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 14.96,
+              "pct": 68.9,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 11.14,
+              "pct": 25.76,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+8",
+          "date": "2026-08-25",
+          "weekday": "周二",
+          "is_today": false,
+          "trigger_pct": 37.68,
+          "trigger_price": 12.2,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 16.53,
+              "pct": 86.51,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 12.2,
+              "pct": 37.68,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+9",
+          "date": "2026-08-26",
+          "weekday": "周三",
+          "is_today": false,
+          "trigger_pct": 51.66,
+          "trigger_price": 13.44,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 17.58,
+              "pct": 98.37,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 13.44,
+              "pct": 51.66,
+              "binding": true
+            }
+          ]
+        },
+        {
+          "key": "T+10",
+          "date": "2026-08-27",
+          "weekday": "周四",
+          "is_today": false,
+          "trigger_pct": 67.91,
+          "trigger_price": 14.88,
+          "trigger_rule": "30d",
+          "rules": [
+            {
+              "key": "10d",
+              "label": "10日 100%",
+              "price": 17.72,
+              "pct": 100,
+              "binding": false
+            },
+            {
+              "key": "30d",
+              "label": "30日 200%",
+              "price": 14.88,
+              "pct": 67.91,
+              "binding": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
