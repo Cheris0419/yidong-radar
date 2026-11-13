@@ -1,6 +1,6 @@
 {
   "base": "https://cheris0419.github.io/yidong-radar/",
-  "generatedAt": "2026-11-13T01:04:59.488Z",
+  "generatedAt": "2026-11-13T01:37:14.738Z",
   "cases": {
     "600664": {
       "payload": {
@@ -13,29 +13,29 @@
             "board": "main",
             "board_label": "沪主板",
             "secid": "1.600664",
-            "price": 5.68,
+            "price": 5.33,
             "prev_close": 5.68,
-            "pct": 0,
-            "open": 0,
-            "high": 0,
-            "low": 0,
-            "status": "pre_open",
+            "pct": -6.16,
+            "open": 5.67,
+            "high": 5.67,
+            "low": 5.32,
+            "status": "trading",
             "suspended": false
           },
           "index": {
             "code": "000001",
             "name": "上证指数",
-            "price": 3655.83,
+            "price": 3654.05,
             "prev_close": 3655.83,
-            "pct": 0
+            "pct": -0.05
           },
           "snapshot": {
             "trade_date": "2026-11-13",
-            "time": "09:05:03",
-            "phase": "pre_open",
+            "time": "09:37:22",
+            "phase": "trading",
             "is_trading_day": true,
             "show_t0": true,
-            "updated_at": "2026-11-13T09:05:03+08:00"
+            "updated_at": "2026-11-13T09:37:22+08:00"
           },
           "risk": {
             "level": "safe",
@@ -44,32 +44,32 @@
           },
           "summary": {
             "dev10": {
-              "value": 2.33,
+              "value": 0,
               "threshold": 100,
-              "remaining": 97.67,
-              "progress": 0.0233,
-              "stock_change": 3.65,
-              "index_change": 1.32,
-              "window_start": "2026-11-03",
+              "remaining": 100,
+              "progress": 0,
+              "stock_change": 0,
+              "index_change": 0,
+              "window_start": "2026-11-13",
               "window_end": "2026-11-13",
-              "base_close": 5.48,
-              "base_date": "2026-11-03",
-              "trigger_price": 11.03,
+              "base_close": 5.33,
+              "base_date": "2026-11-13",
+              "trigger_price": 10.66,
               "level": "safe",
               "label": "安全"
             },
             "dev30": {
-              "value": 7.25,
+              "value": 0.68,
               "threshold": 200,
-              "remaining": 192.75,
-              "progress": 0.0363,
-              "stock_change": 7.37,
-              "index_change": 0.12,
+              "remaining": 199.32,
+              "progress": 0.0034,
+              "stock_change": 0.76,
+              "index_change": 0.07,
               "window_start": "2026-10-29",
               "window_end": "2026-11-13",
               "base_close": 5.29,
               "base_date": "2026-10-29",
-              "trigger_price": 15.88,
+              "trigger_price": 15.87,
               "level": "safe",
               "label": "安全"
             },
@@ -100,22 +100,22 @@
               "date": "2026-11-13",
               "weekday": "周五",
               "is_today": true,
-              "trigger_pct": 94.23,
-              "trigger_price": 11.03,
+              "trigger_pct": 87.68,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.03,
-                  "pct": 94.23,
+                  "price": 10.66,
+                  "pct": 87.68,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 179.47,
                   "binding": false
                 }
               ]
@@ -125,22 +125,22 @@
               "date": "2026-11-16",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 94.23,
-              "trigger_price": 11.03,
+              "trigger_pct": 100,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.03,
-                  "pct": 94.23,
+                  "price": 10.66,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -150,22 +150,22 @@
               "date": "2026-11-17",
               "weekday": "周二",
               "is_today": false,
-              "trigger_pct": 94.23,
-              "trigger_price": 11.03,
+              "trigger_pct": 100,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.03,
-                  "pct": 94.23,
+                  "price": 10.66,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -175,22 +175,22 @@
               "date": "2026-11-18",
               "weekday": "周三",
               "is_today": false,
-              "trigger_pct": 95.6,
-              "trigger_price": 11.11,
+              "trigger_pct": 100,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.11,
-                  "pct": 95.6,
+                  "price": 10.66,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -200,22 +200,22 @@
               "date": "2026-11-19",
               "weekday": "周四",
               "is_today": false,
-              "trigger_pct": 95.6,
-              "trigger_price": 11.11,
+              "trigger_pct": 100,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.11,
-                  "pct": 95.6,
+                  "price": 10.66,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -225,22 +225,22 @@
               "date": "2026-11-20",
               "weekday": "周五",
               "is_today": false,
-              "trigger_pct": 95.6,
-              "trigger_price": 11.11,
+              "trigger_pct": 100,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.11,
-                  "pct": 95.6,
+                  "price": 10.66,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -251,21 +251,21 @@
               "weekday": "周一",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 11.36,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.36,
+                  "price": 10.66,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -276,21 +276,21 @@
               "weekday": "周二",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 11.36,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.36,
+                  "price": 10.66,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -301,21 +301,21 @@
               "weekday": "周三",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 11.36,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.36,
+                  "price": 10.66,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -326,21 +326,21 @@
               "weekday": "周四",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 11.36,
+              "trigger_price": 10.66,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 11.36,
+                  "price": 10.66,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 15.88,
-                  "pct": 179.51,
+                  "price": 15.87,
+                  "pct": 197.82,
                   "binding": false
                 }
               ]
@@ -363,27 +363,28 @@
         "stockName": "哈药股份",
         "stockCode": "600664",
         "stockBoard": "沪主板",
-        "price": "5.68",
-        "pct": "0.00%",
+        "price": "5.33",
+        "pct": "-6.16%",
         "indexName": "上证指数",
-        "indexPrice": "3655.83",
-        "indexPct": "0.00%",
+        "indexPrice": "3654.05",
+        "indexPct": "-0.05%",
         "risk": "安全",
         "riskReasons": "",
         "rows": [
           {
             "key": "T+0",
             "date": "2026-11-13",
-            "pct": "94.23%",
-            "price": "触发价 11.03",
+            "pct": "87.68%",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "当日",
             "rules": [
               {
-                "text": "10日 100%触发价 11.03",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -391,16 +392,17 @@
           {
             "key": "T+1",
             "date": "2026-11-16",
-            "pct": "94.23%",
-            "price": "触发价 11.03",
+            "pct": "100.00%",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.03",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -408,16 +410,17 @@
           {
             "key": "T+2",
             "date": "2026-11-17",
-            "pct": "94.23%",
-            "price": "触发价 11.03",
+            "pct": "100.00%",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.03",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -425,16 +428,17 @@
           {
             "key": "T+3",
             "date": "2026-11-18",
-            "pct": "95.60%",
-            "price": "触发价 11.11",
+            "pct": "100.00%",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.11",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -442,16 +446,17 @@
           {
             "key": "T+4",
             "date": "2026-11-19",
-            "pct": "95.60%",
-            "price": "触发价 11.11",
+            "pct": "100.00%",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.11",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -459,16 +464,17 @@
           {
             "key": "T+5",
             "date": "2026-11-20",
-            "pct": "95.60%",
-            "price": "触发价 11.11",
+            "pct": "100.00%",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.11",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -477,15 +483,16 @@
             "key": "T+6",
             "date": "2026-11-23",
             "pct": "100.00%",
-            "price": "触发价 11.36",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.36",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -494,15 +501,16 @@
             "key": "T+7",
             "date": "2026-11-24",
             "pct": "100.00%",
-            "price": "触发价 11.36",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.36",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -511,15 +519,16 @@
             "key": "T+8",
             "date": "2026-11-25",
             "pct": "100.00%",
-            "price": "触发价 11.36",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.36",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -528,15 +537,16 @@
             "key": "T+9",
             "date": "2026-11-26",
             "pct": "100.00%",
-            "price": "触发价 11.36",
+            "price": "触发价 10.66",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 11.36",
+                "text": "10日 100%触发价 10.66",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 15.88",
+                "text": "30日 200%触发价 15.87",
                 "binding": false
               }
             ]
@@ -545,16 +555,16 @@
         "readouts": [
           {
             "title": "10日 100% 偏离值",
-            "value": "2.33%",
-            "remaining": "距 +100% 还差 97.67%",
+            "value": "0.00%",
+            "remaining": "距 +100% 还差 100.00%",
             "rule": "",
             "event": "",
             "level": "safe"
           },
           {
             "title": "30日 200% 偏离值",
-            "value": "7.25%",
-            "remaining": "距 +200% 还差 192.75%",
+            "value": "0.68%",
+            "remaining": "距 +200% 还差 199.32%",
             "rule": "",
             "event": "",
             "level": "safe"
@@ -573,13 +583,13 @@
           "text": "已收盘 · 展示下一交易日起触发线"
         },
         "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
-        "noticeSub": "未开盘数据更新 09:05:03交易日 2026-11-13参考指数 上证指数",
+        "noticeSub": "数据更新 09:37:22交易日 2026-11-13参考指数 上证指数",
         "tableFoot": {
           "hidden": false,
           "text": "10 日线自 2026-08-07 起算 · 30 日线自 2026-09-04 起算 · 上次触发 30日 200% · 2026-08-20（偏离 +200.02%）"
         },
         "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
-        "footerUpdate": "2026-11-13 09:05:03",
+        "footerUpdate": "2026-11-13 09:37:22",
         "errorViewHidden": true,
         "errorTitle": "未找到该股票代码，请检查输入",
         "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
@@ -605,29 +615,29 @@
             "board": "star",
             "board_label": "科创板",
             "secid": "1.688981",
-            "price": 111.72,
+            "price": 115.68,
             "prev_close": 111.72,
-            "pct": 0,
-            "open": 0,
-            "high": 0,
-            "low": 0,
-            "status": "pre_open",
+            "pct": 3.54,
+            "open": 111.72,
+            "high": 115.68,
+            "low": 111.72,
+            "status": "trading",
             "suspended": false
           },
           "index": {
             "code": "000001",
             "name": "上证指数",
-            "price": 3655.83,
+            "price": 3654.05,
             "prev_close": 3655.83,
-            "pct": 0
+            "pct": -0.05
           },
           "snapshot": {
             "trade_date": "2026-11-13",
-            "time": "09:05:04",
-            "phase": "pre_open",
+            "time": "09:37:23",
+            "phase": "trading",
             "is_trading_day": true,
             "show_t0": true,
-            "updated_at": "2026-11-13T09:05:04+08:00"
+            "updated_at": "2026-11-13T09:37:23+08:00"
           },
           "risk": {
             "level": "safe",
@@ -636,32 +646,32 @@
           },
           "summary": {
             "dev10": {
-              "value": 13.85,
+              "value": 17.99,
               "threshold": 100,
-              "remaining": 86.15,
-              "progress": 0.1385,
-              "stock_change": 15.43,
-              "index_change": 1.58,
+              "remaining": 82.01,
+              "progress": 0.1799,
+              "stock_change": 19.52,
+              "index_change": 1.53,
               "window_start": "2026-10-30",
               "window_end": "2026-11-13",
               "base_close": 96.79,
               "base_date": "2026-10-30",
-              "trigger_price": 195.11,
+              "trigger_price": 195.06,
               "level": "safe",
               "label": "安全"
             },
             "dev30": {
-              "value": 13.85,
+              "value": 17.99,
               "threshold": 200,
-              "remaining": 186.15,
-              "progress": 0.0692,
-              "stock_change": 15.43,
-              "index_change": 1.58,
+              "remaining": 182.01,
+              "progress": 0.0899,
+              "stock_change": 19.52,
+              "index_change": 1.53,
               "window_start": "2026-10-30",
               "window_end": "2026-11-13",
               "base_close": 96.79,
               "base_date": "2026-10-30",
-              "trigger_price": 291.9,
+              "trigger_price": 291.85,
               "level": "safe",
               "label": "安全"
             },
@@ -688,22 +698,22 @@
               "date": "2026-11-13",
               "weekday": "周五",
               "is_today": true,
-              "trigger_pct": 74.64,
-              "trigger_price": 195.11,
+              "trigger_pct": 74.6,
+              "trigger_price": 195.06,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 195.11,
-                  "pct": 74.64,
+                  "price": 195.06,
+                  "pct": 74.6,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 161.23,
                   "binding": false
                 }
               ]
@@ -713,22 +723,22 @@
               "date": "2026-11-16",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 79.46,
-              "trigger_price": 200.49,
+              "trigger_pct": 73.27,
+              "trigger_price": 200.44,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 200.49,
-                  "pct": 79.46,
+                  "price": 200.44,
+                  "pct": 73.27,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -738,22 +748,22 @@
               "date": "2026-11-17",
               "weekday": "周二",
               "is_today": false,
-              "trigger_pct": 84.01,
-              "trigger_price": 205.57,
+              "trigger_pct": 77.66,
+              "trigger_price": 205.52,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 205.57,
-                  "pct": 84.01,
+                  "price": 205.52,
+                  "pct": 77.66,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -763,22 +773,22 @@
               "date": "2026-11-18",
               "weekday": "周三",
               "is_today": false,
-              "trigger_pct": 92.69,
-              "trigger_price": 215.27,
+              "trigger_pct": 86.04,
+              "trigger_price": 215.22,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 215.27,
-                  "pct": 92.69,
+                  "price": 215.22,
+                  "pct": 86.04,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -788,22 +798,22 @@
               "date": "2026-11-19",
               "weekday": "周四",
               "is_today": false,
-              "trigger_pct": 92.69,
-              "trigger_price": 215.27,
+              "trigger_pct": 86.04,
+              "trigger_price": 215.22,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 215.27,
-                  "pct": 92.69,
+                  "price": 215.22,
+                  "pct": 86.04,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -813,22 +823,22 @@
               "date": "2026-11-20",
               "weekday": "周五",
               "is_today": false,
-              "trigger_pct": 92.69,
-              "trigger_price": 215.27,
+              "trigger_pct": 86.04,
+              "trigger_price": 215.22,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 215.27,
-                  "pct": 92.69,
+                  "price": 215.22,
+                  "pct": 86.04,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -838,22 +848,22 @@
               "date": "2026-11-23",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 92.69,
-              "trigger_price": 215.27,
+              "trigger_pct": 86.04,
+              "trigger_price": 215.22,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 215.27,
-                  "pct": 92.69,
+                  "price": 215.22,
+                  "pct": 86.04,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -863,22 +873,22 @@
               "date": "2026-11-24",
               "weekday": "周二",
               "is_today": false,
-              "trigger_pct": 92.69,
-              "trigger_price": 215.27,
+              "trigger_pct": 86.04,
+              "trigger_price": 215.22,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 215.27,
-                  "pct": 92.69,
+                  "price": 215.22,
+                  "pct": 86.04,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -888,22 +898,22 @@
               "date": "2026-11-25",
               "weekday": "周三",
               "is_today": false,
-              "trigger_pct": 95.03,
-              "trigger_price": 217.88,
+              "trigger_pct": 88.3,
+              "trigger_price": 217.83,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 217.88,
-                  "pct": 95.03,
+                  "price": 217.83,
+                  "pct": 88.3,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -913,22 +923,22 @@
               "date": "2026-11-26",
               "weekday": "周四",
               "is_today": false,
-              "trigger_pct": 100,
-              "trigger_price": 223.44,
+              "trigger_pct": 93.11,
+              "trigger_price": 223.39,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 223.44,
-                  "pct": 100,
+                  "price": 223.39,
+                  "pct": 93.11,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 291.9,
-                  "pct": 161.28,
+                  "price": 291.85,
+                  "pct": 152.29,
                   "binding": false
                 }
               ]
@@ -951,27 +961,28 @@
         "stockName": "中芯国际",
         "stockCode": "688981",
         "stockBoard": "科创板",
-        "price": "111.72",
-        "pct": "0.00%",
+        "price": "115.68",
+        "pct": "+3.54%",
         "indexName": "上证指数",
-        "indexPrice": "3655.83",
-        "indexPct": "0.00%",
+        "indexPrice": "3654.05",
+        "indexPct": "-0.05%",
         "risk": "安全",
         "riskReasons": "",
         "rows": [
           {
             "key": "T+0",
             "date": "2026-11-13",
-            "pct": "74.64%",
-            "price": "触发价 195.11",
+            "pct": "74.60%",
+            "price": "触发价 195.06",
             "over": false,
+            "todayChip": "当日",
             "rules": [
               {
-                "text": "10日 100%触发价 195.11",
+                "text": "10日 100%触发价 195.06",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -979,16 +990,17 @@
           {
             "key": "T+1",
             "date": "2026-11-16",
-            "pct": "79.46%",
-            "price": "触发价 200.49",
+            "pct": "73.27%",
+            "price": "触发价 200.44",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 200.49",
+                "text": "10日 100%触发价 200.44",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -996,16 +1008,17 @@
           {
             "key": "T+2",
             "date": "2026-11-17",
-            "pct": "84.01%",
-            "price": "触发价 205.57",
+            "pct": "77.66%",
+            "price": "触发价 205.52",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 205.57",
+                "text": "10日 100%触发价 205.52",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1013,16 +1026,17 @@
           {
             "key": "T+3",
             "date": "2026-11-18",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1030,16 +1044,17 @@
           {
             "key": "T+4",
             "date": "2026-11-19",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1047,16 +1062,17 @@
           {
             "key": "T+5",
             "date": "2026-11-20",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1064,16 +1080,17 @@
           {
             "key": "T+6",
             "date": "2026-11-23",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1081,16 +1098,17 @@
           {
             "key": "T+7",
             "date": "2026-11-24",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1098,16 +1116,17 @@
           {
             "key": "T+8",
             "date": "2026-11-25",
-            "pct": "95.03%",
-            "price": "触发价 217.88",
+            "pct": "88.30%",
+            "price": "触发价 217.83",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 217.88",
+                "text": "10日 100%触发价 217.83",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1115,16 +1134,17 @@
           {
             "key": "T+9",
             "date": "2026-11-26",
-            "pct": "100.00%",
-            "price": "触发价 223.44",
+            "pct": "93.11%",
+            "price": "触发价 223.39",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 223.44",
+                "text": "10日 100%触发价 223.39",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -1133,16 +1153,16 @@
         "readouts": [
           {
             "title": "10日 100% 偏离值",
-            "value": "13.85%",
-            "remaining": "距 +100% 还差 86.15%",
+            "value": "17.99%",
+            "remaining": "距 +100% 还差 82.01%",
             "rule": "",
             "event": "",
             "level": "safe"
           },
           {
             "title": "30日 200% 偏离值",
-            "value": "13.85%",
-            "remaining": "距 +200% 还差 186.15%",
+            "value": "17.99%",
+            "remaining": "距 +200% 还差 182.01%",
             "rule": "",
             "event": "",
             "level": "safe"
@@ -1161,13 +1181,13 @@
           "text": "已收盘 · 展示下一交易日起触发线"
         },
         "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
-        "noticeSub": "未开盘数据更新 09:05:04交易日 2026-11-13参考指数 上证指数",
+        "noticeSub": "数据更新 09:37:23交易日 2026-11-13参考指数 上证指数",
         "tableFoot": {
           "hidden": true,
           "text": ""
         },
         "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
-        "footerUpdate": "2026-11-13 09:05:04",
+        "footerUpdate": "2026-11-13 09:37:23",
         "errorViewHidden": true,
         "errorTitle": "未找到该股票代码，请检查输入",
         "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
@@ -1237,29 +1257,29 @@
             "board": "main",
             "board_label": "深主板",
             "secid": "0.000993",
-            "price": 12.35,
+            "price": 12.07,
             "prev_close": 12.35,
-            "pct": 0,
-            "open": 0,
-            "high": 0,
-            "low": 0,
-            "status": "pre_open",
+            "pct": -2.27,
+            "open": 12.33,
+            "high": 12.38,
+            "low": 12.02,
+            "status": "trading",
             "suspended": false
           },
           "index": {
             "code": "399106",
             "name": "深证综指",
-            "price": 2148.67,
+            "price": 2139.96,
             "prev_close": 2148.67,
-            "pct": 0
+            "pct": -0.41
           },
           "snapshot": {
             "trade_date": "2026-11-13",
-            "time": "09:05:02",
-            "phase": "pre_open",
+            "time": "09:37:18",
+            "phase": "trading",
             "is_trading_day": true,
             "show_t0": true,
-            "updated_at": "2026-11-13T09:05:02+08:00"
+            "updated_at": "2026-11-13T09:37:18+08:00"
           },
           "risk": {
             "level": "safe",
@@ -1268,32 +1288,32 @@
           },
           "summary": {
             "dev10": {
-              "value": 7.83,
+              "value": 5.71,
               "threshold": 100,
-              "remaining": 92.17,
-              "progress": 0.0783,
-              "stock_change": 12.27,
-              "index_change": 4.44,
+              "remaining": 94.29,
+              "progress": 0.0571,
+              "stock_change": 9.73,
+              "index_change": 4.02,
               "window_start": "2026-10-30",
               "window_end": "2026-11-13",
               "base_close": 11,
               "base_date": "2026-10-30",
-              "trigger_price": 22.49,
+              "trigger_price": 22.44,
               "level": "safe",
               "label": "安全"
             },
             "dev30": {
-              "value": 7.83,
+              "value": 5.71,
               "threshold": 200,
-              "remaining": 192.17,
-              "progress": 0.0392,
-              "stock_change": 12.27,
-              "index_change": 4.44,
+              "remaining": 194.29,
+              "progress": 0.0286,
+              "stock_change": 9.73,
+              "index_change": 4.02,
               "window_start": "2026-10-30",
               "window_end": "2026-11-13",
               "base_close": 11,
               "base_date": "2026-10-30",
-              "trigger_price": 33.49,
+              "trigger_price": 33.44,
               "level": "safe",
               "label": "安全"
             },
@@ -1324,22 +1344,22 @@
               "date": "2026-11-13",
               "weekday": "周五",
               "is_today": true,
-              "trigger_pct": 82.09,
-              "trigger_price": 22.49,
+              "trigger_pct": 81.71,
+              "trigger_price": 22.44,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 22.49,
-                  "pct": 82.09,
+                  "price": 22.44,
+                  "pct": 81.71,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 170.78,
                   "binding": false
                 }
               ]
@@ -1349,22 +1369,22 @@
               "date": "2026-11-16",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 86.72,
-              "trigger_price": 23.06,
+              "trigger_pct": 90.66,
+              "trigger_price": 23.01,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 23.06,
-                  "pct": 86.72,
+                  "price": 23.01,
+                  "pct": 90.66,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1374,22 +1394,22 @@
               "date": "2026-11-17",
               "weekday": "周二",
               "is_today": false,
-              "trigger_pct": 88.31,
-              "trigger_price": 23.26,
+              "trigger_pct": 92.28,
+              "trigger_price": 23.21,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 23.26,
-                  "pct": 88.31,
+                  "price": 23.21,
+                  "pct": 92.28,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1399,22 +1419,22 @@
               "date": "2026-11-18",
               "weekday": "周三",
               "is_today": false,
-              "trigger_pct": 91.36,
-              "trigger_price": 23.63,
+              "trigger_pct": 95.41,
+              "trigger_price": 23.59,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 23.63,
-                  "pct": 91.36,
+                  "price": 23.59,
+                  "pct": 95.41,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1424,22 +1444,22 @@
               "date": "2026-11-19",
               "weekday": "周四",
               "is_today": false,
-              "trigger_pct": 96.45,
-              "trigger_price": 24.26,
+              "trigger_pct": 100,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.26,
-                  "pct": 96.45,
+                  "price": 24.14,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1450,21 +1470,21 @@
               "weekday": "周五",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1474,22 +1494,22 @@
               "date": "2026-11-23",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 100.2,
-              "trigger_price": 24.73,
+              "trigger_pct": 100,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.73,
-                  "pct": 100.2,
+                  "price": 24.14,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1500,21 +1520,21 @@
               "weekday": "周二",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1525,21 +1545,21 @@
               "weekday": "周三",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1550,21 +1570,21 @@
               "weekday": "周四",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -1587,27 +1607,28 @@
         "stockName": "闽东电力",
         "stockCode": "000993",
         "stockBoard": "深主板",
-        "price": "12.35",
-        "pct": "0.00%",
+        "price": "12.07",
+        "pct": "-2.27%",
         "indexName": "深证综指",
-        "indexPrice": "2148.67",
-        "indexPct": "0.00%",
+        "indexPrice": "2139.96",
+        "indexPct": "-0.41%",
         "risk": "安全",
         "riskReasons": "",
         "rows": [
           {
             "key": "T+0",
             "date": "2026-11-13",
-            "pct": "82.09%",
-            "price": "触发价 22.49",
+            "pct": "81.71%",
+            "price": "触发价 22.44",
             "over": false,
+            "todayChip": "当日",
             "rules": [
               {
-                "text": "10日 100%触发价 22.49",
+                "text": "10日 100%触发价 22.44",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1615,16 +1636,17 @@
           {
             "key": "T+1",
             "date": "2026-11-16",
-            "pct": "86.72%",
-            "price": "触发价 23.06",
+            "pct": "90.66%",
+            "price": "触发价 23.01",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.06",
+                "text": "10日 100%触发价 23.01",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1632,16 +1654,17 @@
           {
             "key": "T+2",
             "date": "2026-11-17",
-            "pct": "88.31%",
-            "price": "触发价 23.26",
+            "pct": "92.28%",
+            "price": "触发价 23.21",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.26",
+                "text": "10日 100%触发价 23.21",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1649,16 +1672,17 @@
           {
             "key": "T+3",
             "date": "2026-11-18",
-            "pct": "91.36%",
-            "price": "触发价 23.63",
+            "pct": "95.41%",
+            "price": "触发价 23.59",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.63",
+                "text": "10日 100%触发价 23.59",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1666,16 +1690,17 @@
           {
             "key": "T+4",
             "date": "2026-11-19",
-            "pct": "96.45%",
-            "price": "触发价 24.26",
+            "pct": "100.00%",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.26",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1684,15 +1709,16 @@
             "key": "T+5",
             "date": "2026-11-20",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1700,16 +1726,17 @@
           {
             "key": "T+6",
             "date": "2026-11-23",
-            "pct": "100.20%",
-            "price": "触发价 24.73",
+            "pct": "100.00%",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.73",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1718,15 +1745,16 @@
             "key": "T+7",
             "date": "2026-11-24",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1735,15 +1763,16 @@
             "key": "T+8",
             "date": "2026-11-25",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1752,15 +1781,16 @@
             "key": "T+9",
             "date": "2026-11-26",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -1769,16 +1799,16 @@
         "readouts": [
           {
             "title": "10日 100% 偏离值",
-            "value": "7.83%",
-            "remaining": "距 +100% 还差 92.17%",
+            "value": "5.71%",
+            "remaining": "距 +100% 还差 94.29%",
             "rule": "",
             "event": "",
             "level": "safe"
           },
           {
             "title": "30日 200% 偏离值",
-            "value": "7.83%",
-            "remaining": "距 +200% 还差 192.17%",
+            "value": "5.71%",
+            "remaining": "距 +200% 还差 194.29%",
             "rule": "",
             "event": "",
             "level": "safe"
@@ -1797,13 +1827,13 @@
           "text": "已收盘 · 展示下一交易日起触发线"
         },
         "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
-        "noticeSub": "未开盘数据更新 09:05:02交易日 2026-11-13参考指数 深证综指",
+        "noticeSub": "数据更新 09:37:18交易日 2026-11-13参考指数 深证综指",
         "tableFoot": {
           "hidden": false,
           "text": "10 日线自 2026-10-15 起算 · 30 日线自 2026-10-15 起算 · 上次触发 10日 100% · 2026-09-22（偏离 +100.02%）"
         },
         "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
-        "footerUpdate": "2026-11-13 09:05:02",
+        "footerUpdate": "2026-11-13 09:37:18",
         "errorViewHidden": true,
         "errorTitle": "未找到该股票代码，请检查输入",
         "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
@@ -1849,8 +1879,8 @@
         "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
         "footerUpdate": "—",
         "errorViewHidden": false,
-        "errorTitle": "未找到该股票代码，请检查输入",
-        "errorText": "代码 999999。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorTitle": "未找到该股票，请检查代码是否正确",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
         "errorCode": "NOT_FOUND",
         "emptyViewHidden": true,
         "searchOptions": [],
@@ -1862,27 +1892,19 @@
         "staticMarker": true
       },
       "raw": {
-        "status": 404,
-        "contentType": "text/html; charset=utf-8",
-        "json": null,
-        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
-      },
-      "apiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ],
-      "probeApiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "json": {
+          "ok": false,
+          "error": {
+            "code": "NOT_FOUND",
+            "message": "未找到该股票，请检查代码是否正确"
+          }
         },
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ]
+        "bodyHead": "{\"ok\":false,\"error\":{\"code\":\"NOT_FOUND\",\"message\":\"未找到该股票，请检查代码是否正确\"}}"
+      },
+      "apiReqs": [],
+      "probeApiReqs": []
     },
     "error_123456": {
       "dom": {
@@ -1915,8 +1937,8 @@
         "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
         "footerUpdate": "—",
         "errorViewHidden": false,
-        "errorTitle": "未找到该股票代码，请检查输入",
-        "errorText": "代码 123456。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
+        "errorTitle": "未找到该股票，请检查代码是否正确",
+        "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
         "errorCode": "NOT_FOUND",
         "emptyViewHidden": true,
         "searchOptions": [],
@@ -1928,27 +1950,19 @@
         "staticMarker": true
       },
       "raw": {
-        "status": 404,
-        "contentType": "text/html; charset=utf-8",
-        "json": null,
-        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
-      },
-      "apiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ],
-      "probeApiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "json": {
+          "ok": false,
+          "error": {
+            "code": "NOT_FOUND",
+            "message": "未找到该股票，请检查代码是否正确"
+          }
         },
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ]
+        "bodyHead": "{\"ok\":false,\"error\":{\"code\":\"NOT_FOUND\",\"message\":\"未找到该股票，请检查代码是否正确\"}}"
+      },
+      "apiReqs": [],
+      "probeApiReqs": []
     },
     "error_920185": {
       "dom": {
@@ -1981,9 +1995,9 @@
         "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
         "footerUpdate": "—",
         "errorViewHidden": false,
-        "errorTitle": "未找到该股票代码，请检查输入",
-        "errorText": "代码 920185。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
-        "errorCode": "NOT_FOUND",
+        "errorTitle": "北交所 / 老三板股票暂不支持（规则与沪深不同）",
+        "errorText": "可以返回搜索，换一只沪深 A 股查看。",
+        "errorCode": "NOT_SUPPORTED",
         "emptyViewHidden": true,
         "searchOptions": [],
         "searchPanelHidden": true,
@@ -1994,27 +2008,19 @@
         "staticMarker": true
       },
       "raw": {
-        "status": 404,
-        "contentType": "text/html; charset=utf-8",
-        "json": null,
-        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
-      },
-      "apiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ],
-      "probeApiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "json": {
+          "ok": false,
+          "error": {
+            "code": "NOT_SUPPORTED",
+            "message": "北交所 / 老三板股票暂不支持（规则与沪深不同）"
+          }
         },
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ]
+        "bodyHead": "{\"ok\":false,\"error\":{\"code\":\"NOT_SUPPORTED\",\"message\":\"北交所 / 老三板股票暂不支持（规则与沪深不同）\"}}"
+      },
+      "apiReqs": [],
+      "probeApiReqs": []
     },
     "error_900901": {
       "dom": {
@@ -2047,9 +2053,9 @@
         "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
         "footerUpdate": "—",
         "errorViewHidden": false,
-        "errorTitle": "未找到该股票代码，请检查输入",
-        "errorText": "代码 900901。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
-        "errorCode": "NOT_FOUND",
+        "errorTitle": "B 股暂不支持",
+        "errorText": "可以返回搜索，换一只沪深 A 股查看。",
+        "errorCode": "NOT_SUPPORTED",
         "emptyViewHidden": true,
         "searchOptions": [],
         "searchPanelHidden": true,
@@ -2060,27 +2066,19 @@
         "staticMarker": true
       },
       "raw": {
-        "status": 404,
-        "contentType": "text/html; charset=utf-8",
-        "json": null,
-        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
-      },
-      "apiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ],
-      "probeApiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "json": {
+          "ok": false,
+          "error": {
+            "code": "NOT_SUPPORTED",
+            "message": "B 股暂不支持"
+          }
         },
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ]
+        "bodyHead": "{\"ok\":false,\"error\":{\"code\":\"NOT_SUPPORTED\",\"message\":\"B 股暂不支持\"}}"
+      },
+      "apiReqs": [],
+      "probeApiReqs": []
     },
     "error_abc": {
       "dom": {
@@ -2126,18 +2124,19 @@
         "staticMarker": true
       },
       "raw": {
-        "status": 404,
-        "contentType": "text/html; charset=utf-8",
-        "json": null,
-        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "json": {
+          "ok": false,
+          "error": {
+            "code": "BAD_CODE",
+            "message": "请输入 6 位 A 股代码"
+          }
+        },
+        "bodyHead": "{\"ok\":false,\"error\":{\"code\":\"BAD_CODE\",\"message\":\"请输入 6 位 A 股代码\"}}"
       },
       "apiReqs": [],
-      "probeApiReqs": [
-        {
-          "path": "/api/triggers",
-          "status": 404
-        }
-      ]
+      "probeApiReqs": []
     },
     "mobile_000993": {
       "payload": {
@@ -2150,29 +2149,29 @@
             "board": "main",
             "board_label": "深主板",
             "secid": "0.000993",
-            "price": 12.35,
+            "price": 12.07,
             "prev_close": 12.35,
-            "pct": 0,
-            "open": 0,
-            "high": 0,
-            "low": 0,
-            "status": "pre_open",
+            "pct": -2.27,
+            "open": 12.33,
+            "high": 12.38,
+            "low": 12.02,
+            "status": "trading",
             "suspended": false
           },
           "index": {
             "code": "399106",
             "name": "深证综指",
-            "price": 2148.67,
+            "price": 2139.96,
             "prev_close": 2148.67,
-            "pct": 0
+            "pct": -0.41
           },
           "snapshot": {
             "trade_date": "2026-11-13",
-            "time": "09:05:20",
-            "phase": "pre_open",
+            "time": "09:37:42",
+            "phase": "trading",
             "is_trading_day": true,
             "show_t0": true,
-            "updated_at": "2026-11-13T09:05:20+08:00"
+            "updated_at": "2026-11-13T09:37:42+08:00"
           },
           "risk": {
             "level": "safe",
@@ -2181,32 +2180,32 @@
           },
           "summary": {
             "dev10": {
-              "value": 7.83,
+              "value": 5.71,
               "threshold": 100,
-              "remaining": 92.17,
-              "progress": 0.0783,
-              "stock_change": 12.27,
-              "index_change": 4.44,
+              "remaining": 94.29,
+              "progress": 0.0571,
+              "stock_change": 9.73,
+              "index_change": 4.02,
               "window_start": "2026-10-30",
               "window_end": "2026-11-13",
               "base_close": 11,
               "base_date": "2026-10-30",
-              "trigger_price": 22.49,
+              "trigger_price": 22.44,
               "level": "safe",
               "label": "安全"
             },
             "dev30": {
-              "value": 7.83,
+              "value": 5.71,
               "threshold": 200,
-              "remaining": 192.17,
-              "progress": 0.0392,
-              "stock_change": 12.27,
-              "index_change": 4.44,
+              "remaining": 194.29,
+              "progress": 0.0286,
+              "stock_change": 9.73,
+              "index_change": 4.02,
               "window_start": "2026-10-30",
               "window_end": "2026-11-13",
               "base_close": 11,
               "base_date": "2026-10-30",
-              "trigger_price": 33.49,
+              "trigger_price": 33.44,
               "level": "safe",
               "label": "安全"
             },
@@ -2237,22 +2236,22 @@
               "date": "2026-11-13",
               "weekday": "周五",
               "is_today": true,
-              "trigger_pct": 82.09,
-              "trigger_price": 22.49,
+              "trigger_pct": 81.71,
+              "trigger_price": 22.44,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 22.49,
-                  "pct": 82.09,
+                  "price": 22.44,
+                  "pct": 81.71,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 170.78,
                   "binding": false
                 }
               ]
@@ -2262,22 +2261,22 @@
               "date": "2026-11-16",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 86.72,
-              "trigger_price": 23.06,
+              "trigger_pct": 90.66,
+              "trigger_price": 23.01,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 23.06,
-                  "pct": 86.72,
+                  "price": 23.01,
+                  "pct": 90.66,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2287,22 +2286,22 @@
               "date": "2026-11-17",
               "weekday": "周二",
               "is_today": false,
-              "trigger_pct": 88.31,
-              "trigger_price": 23.26,
+              "trigger_pct": 92.28,
+              "trigger_price": 23.21,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 23.26,
-                  "pct": 88.31,
+                  "price": 23.21,
+                  "pct": 92.28,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2312,22 +2311,22 @@
               "date": "2026-11-18",
               "weekday": "周三",
               "is_today": false,
-              "trigger_pct": 91.36,
-              "trigger_price": 23.63,
+              "trigger_pct": 95.41,
+              "trigger_price": 23.59,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 23.63,
-                  "pct": 91.36,
+                  "price": 23.59,
+                  "pct": 95.41,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2337,22 +2336,22 @@
               "date": "2026-11-19",
               "weekday": "周四",
               "is_today": false,
-              "trigger_pct": 96.45,
-              "trigger_price": 24.26,
+              "trigger_pct": 100,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.26,
-                  "pct": 96.45,
+                  "price": 24.14,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2363,21 +2362,21 @@
               "weekday": "周五",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2387,22 +2386,22 @@
               "date": "2026-11-23",
               "weekday": "周一",
               "is_today": false,
-              "trigger_pct": 100.2,
-              "trigger_price": 24.73,
+              "trigger_pct": 100,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.73,
-                  "pct": 100.2,
+                  "price": 24.14,
+                  "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2413,21 +2412,21 @@
               "weekday": "周二",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2438,21 +2437,21 @@
               "weekday": "周三",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2463,21 +2462,21 @@
               "weekday": "周四",
               "is_today": false,
               "trigger_pct": 100,
-              "trigger_price": 24.7,
+              "trigger_price": 24.14,
               "trigger_rule": "10d",
               "rules": [
                 {
                   "key": "10d",
                   "label": "10日 100%",
-                  "price": 24.7,
+                  "price": 24.14,
                   "pct": 100,
                   "binding": true
                 },
                 {
                   "key": "30d",
                   "label": "30日 200%",
-                  "price": 33.49,
-                  "pct": 171.16,
+                  "price": 33.44,
+                  "pct": 177.07,
                   "binding": false
                 }
               ]
@@ -2500,27 +2499,28 @@
         "stockName": "闽东电力",
         "stockCode": "000993",
         "stockBoard": "深主板",
-        "price": "12.35",
-        "pct": "0.00%",
+        "price": "12.07",
+        "pct": "-2.27%",
         "indexName": "深证综指",
-        "indexPrice": "2148.67",
-        "indexPct": "0.00%",
+        "indexPrice": "2139.96",
+        "indexPct": "-0.41%",
         "risk": "安全",
         "riskReasons": "",
         "rows": [
           {
             "key": "T+0",
             "date": "2026-11-13",
-            "pct": "82.09%",
-            "price": "触发价 22.49",
+            "pct": "81.71%",
+            "price": "触发价 22.44",
             "over": false,
+            "todayChip": "当日",
             "rules": [
               {
-                "text": "10日 100%触发价 22.49",
+                "text": "10日 100%触发价 22.44",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2528,16 +2528,17 @@
           {
             "key": "T+1",
             "date": "2026-11-16",
-            "pct": "86.72%",
-            "price": "触发价 23.06",
+            "pct": "90.66%",
+            "price": "触发价 23.01",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.06",
+                "text": "10日 100%触发价 23.01",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2545,16 +2546,17 @@
           {
             "key": "T+2",
             "date": "2026-11-17",
-            "pct": "88.31%",
-            "price": "触发价 23.26",
+            "pct": "92.28%",
+            "price": "触发价 23.21",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.26",
+                "text": "10日 100%触发价 23.21",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2562,16 +2564,17 @@
           {
             "key": "T+3",
             "date": "2026-11-18",
-            "pct": "91.36%",
-            "price": "触发价 23.63",
+            "pct": "95.41%",
+            "price": "触发价 23.59",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.63",
+                "text": "10日 100%触发价 23.59",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2579,16 +2582,17 @@
           {
             "key": "T+4",
             "date": "2026-11-19",
-            "pct": "96.45%",
-            "price": "触发价 24.26",
+            "pct": "100.00%",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.26",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2597,15 +2601,16 @@
             "key": "T+5",
             "date": "2026-11-20",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2613,16 +2618,17 @@
           {
             "key": "T+6",
             "date": "2026-11-23",
-            "pct": "100.20%",
-            "price": "触发价 24.73",
+            "pct": "100.00%",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.73",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2631,15 +2637,16 @@
             "key": "T+7",
             "date": "2026-11-24",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2648,15 +2655,16 @@
             "key": "T+8",
             "date": "2026-11-25",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2665,15 +2673,16 @@
             "key": "T+9",
             "date": "2026-11-26",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2682,16 +2691,16 @@
         "readouts": [
           {
             "title": "10日 100% 偏离值",
-            "value": "7.83%",
-            "remaining": "距 +100% 还差 92.17%",
+            "value": "5.71%",
+            "remaining": "距 +100% 还差 94.29%",
             "rule": "",
             "event": "",
             "level": "safe"
           },
           {
             "title": "30日 200% 偏离值",
-            "value": "7.83%",
-            "remaining": "距 +200% 还差 192.17%",
+            "value": "5.71%",
+            "remaining": "距 +200% 还差 194.29%",
             "rule": "",
             "event": "",
             "level": "safe"
@@ -2710,13 +2719,13 @@
           "text": "已收盘 · 展示下一交易日起触发线"
         },
         "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
-        "noticeSub": "未开盘数据更新 09:05:20交易日 2026-11-13参考指数 深证综指",
+        "noticeSub": "数据更新 09:37:42交易日 2026-11-13参考指数 深证综指",
         "tableFoot": {
           "hidden": false,
           "text": "10 日线自 2026-10-15 起算 · 30 日线自 2026-10-15 起算 · 上次触发 10日 100% · 2026-09-22（偏离 +100.02%）"
         },
         "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
-        "footerUpdate": "2026-11-13 09:05:20",
+        "footerUpdate": "2026-11-13 09:37:42",
         "errorViewHidden": true,
         "errorTitle": "未找到该股票代码，请检查输入",
         "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
@@ -2740,27 +2749,28 @@
         "stockName": "闽东电力",
         "stockCode": "000993",
         "stockBoard": "深主板",
-        "price": "12.35",
-        "pct": "0.00%",
+        "price": "12.07",
+        "pct": "-2.27%",
         "indexName": "深证综指",
-        "indexPrice": "2148.67",
-        "indexPct": "0.00%",
+        "indexPrice": "2139.96",
+        "indexPct": "-0.41%",
         "risk": "安全",
         "riskReasons": "",
         "rows": [
           {
             "key": "T+0",
             "date": "2026-11-13",
-            "pct": "82.09%",
-            "price": "触发价 22.49",
+            "pct": "81.71%",
+            "price": "触发价 22.44",
             "over": false,
+            "todayChip": "当日",
             "rules": [
               {
-                "text": "10日 100%触发价 22.49",
+                "text": "10日 100%触发价 22.44",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2768,16 +2778,17 @@
           {
             "key": "T+1",
             "date": "2026-11-16",
-            "pct": "86.72%",
-            "price": "触发价 23.06",
+            "pct": "90.66%",
+            "price": "触发价 23.01",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.06",
+                "text": "10日 100%触发价 23.01",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2785,16 +2796,17 @@
           {
             "key": "T+2",
             "date": "2026-11-17",
-            "pct": "88.31%",
-            "price": "触发价 23.26",
+            "pct": "92.28%",
+            "price": "触发价 23.21",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.26",
+                "text": "10日 100%触发价 23.21",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2802,16 +2814,17 @@
           {
             "key": "T+3",
             "date": "2026-11-18",
-            "pct": "91.36%",
-            "price": "触发价 23.63",
+            "pct": "95.41%",
+            "price": "触发价 23.59",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 23.63",
+                "text": "10日 100%触发价 23.59",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2819,16 +2832,17 @@
           {
             "key": "T+4",
             "date": "2026-11-19",
-            "pct": "96.45%",
-            "price": "触发价 24.26",
+            "pct": "100.00%",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.26",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2837,15 +2851,16 @@
             "key": "T+5",
             "date": "2026-11-20",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2853,16 +2868,17 @@
           {
             "key": "T+6",
             "date": "2026-11-23",
-            "pct": "100.20%",
-            "price": "触发价 24.73",
+            "pct": "100.00%",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.73",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2871,15 +2887,16 @@
             "key": "T+7",
             "date": "2026-11-24",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2888,15 +2905,16 @@
             "key": "T+8",
             "date": "2026-11-25",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2905,15 +2923,16 @@
             "key": "T+9",
             "date": "2026-11-26",
             "pct": "100.00%",
-            "price": "触发价 24.70",
+            "price": "触发价 24.14",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 24.70",
+                "text": "10日 100%触发价 24.14",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 33.49",
+                "text": "30日 200%触发价 33.44",
                 "binding": false
               }
             ]
@@ -2922,16 +2941,16 @@
         "readouts": [
           {
             "title": "10日 100% 偏离值",
-            "value": "7.83%",
-            "remaining": "距 +100% 还差 92.17%",
+            "value": "5.71%",
+            "remaining": "距 +100% 还差 94.29%",
             "rule": "",
             "event": "",
             "level": "safe"
           },
           {
             "title": "30日 200% 偏离值",
-            "value": "7.83%",
-            "remaining": "距 +200% 还差 192.17%",
+            "value": "5.71%",
+            "remaining": "距 +200% 还差 194.29%",
             "rule": "",
             "event": "",
             "level": "safe"
@@ -2950,13 +2969,13 @@
           "text": "已收盘 · 展示下一交易日起触发线"
         },
         "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
-        "noticeSub": "未开盘数据更新 09:05:21交易日 2026-11-13参考指数 深证综指",
+        "noticeSub": "数据更新 09:37:42交易日 2026-11-13参考指数 深证综指",
         "tableFoot": {
           "hidden": false,
           "text": "10 日线自 2026-10-15 起算 · 30 日线自 2026-10-15 起算 · 上次触发 10日 100% · 2026-09-22（偏离 +100.02%）"
         },
         "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
-        "footerUpdate": "2026-11-13 09:05:21",
+        "footerUpdate": "2026-11-13 09:37:42",
         "errorViewHidden": true,
         "errorTitle": "未找到该股票代码，请检查输入",
         "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
@@ -3165,27 +3184,28 @@
         "stockName": "中芯国际",
         "stockCode": "688981",
         "stockBoard": "科创板",
-        "price": "111.72",
-        "pct": "0.00%",
+        "price": "115.68",
+        "pct": "+3.54%",
         "indexName": "上证指数",
-        "indexPrice": "3655.83",
-        "indexPct": "0.00%",
+        "indexPrice": "3654.05",
+        "indexPct": "-0.05%",
         "risk": "安全",
         "riskReasons": "",
         "rows": [
           {
             "key": "T+0",
             "date": "2026-11-13",
-            "pct": "74.64%",
-            "price": "触发价 195.11",
+            "pct": "74.60%",
+            "price": "触发价 195.06",
             "over": false,
+            "todayChip": "当日",
             "rules": [
               {
-                "text": "10日 100%触发价 195.11",
+                "text": "10日 100%触发价 195.06",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3193,16 +3213,17 @@
           {
             "key": "T+1",
             "date": "2026-11-16",
-            "pct": "79.46%",
-            "price": "触发价 200.49",
+            "pct": "73.27%",
+            "price": "触发价 200.44",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 200.49",
+                "text": "10日 100%触发价 200.44",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3210,16 +3231,17 @@
           {
             "key": "T+2",
             "date": "2026-11-17",
-            "pct": "84.01%",
-            "price": "触发价 205.57",
+            "pct": "77.66%",
+            "price": "触发价 205.52",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 205.57",
+                "text": "10日 100%触发价 205.52",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3227,16 +3249,17 @@
           {
             "key": "T+3",
             "date": "2026-11-18",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3244,16 +3267,17 @@
           {
             "key": "T+4",
             "date": "2026-11-19",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3261,16 +3285,17 @@
           {
             "key": "T+5",
             "date": "2026-11-20",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3278,16 +3303,17 @@
           {
             "key": "T+6",
             "date": "2026-11-23",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3295,16 +3321,17 @@
           {
             "key": "T+7",
             "date": "2026-11-24",
-            "pct": "92.69%",
-            "price": "触发价 215.27",
+            "pct": "86.04%",
+            "price": "触发价 215.22",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 215.27",
+                "text": "10日 100%触发价 215.22",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3312,16 +3339,17 @@
           {
             "key": "T+8",
             "date": "2026-11-25",
-            "pct": "95.03%",
-            "price": "触发价 217.88",
+            "pct": "88.30%",
+            "price": "触发价 217.83",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 217.88",
+                "text": "10日 100%触发价 217.83",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3329,16 +3357,17 @@
           {
             "key": "T+9",
             "date": "2026-11-26",
-            "pct": "100.00%",
-            "price": "触发价 223.44",
+            "pct": "93.11%",
+            "price": "触发价 223.39",
             "over": false,
+            "todayChip": "",
             "rules": [
               {
-                "text": "10日 100%触发价 223.44",
+                "text": "10日 100%触发价 223.39",
                 "binding": true
               },
               {
-                "text": "30日 200%触发价 291.90",
+                "text": "30日 200%触发价 291.85",
                 "binding": false
               }
             ]
@@ -3347,16 +3376,16 @@
         "readouts": [
           {
             "title": "10日 100% 偏离值",
-            "value": "13.85%",
-            "remaining": "距 +100% 还差 86.15%",
+            "value": "17.99%",
+            "remaining": "距 +100% 还差 82.01%",
             "rule": "",
             "event": "",
             "level": "safe"
           },
           {
             "title": "30日 200% 偏离值",
-            "value": "13.85%",
-            "remaining": "距 +200% 还差 186.15%",
+            "value": "17.99%",
+            "remaining": "距 +200% 还差 182.01%",
             "rule": "",
             "event": "",
             "level": "safe"
@@ -3375,13 +3404,13 @@
           "text": "已收盘 · 展示下一交易日起触发线"
         },
         "noticeMain": "以下严重异动监管触发线，会根据指数进行变化",
-        "noticeSub": "未开盘数据更新 09:05:18交易日 2026-11-13参考指数 上证指数",
+        "noticeSub": "数据更新 09:37:39交易日 2026-11-13参考指数 上证指数",
         "tableFoot": {
           "hidden": true,
           "text": ""
         },
         "dataSource": "数据来源 同花顺 · 东方财富（浏览器直连）",
-        "footerUpdate": "2026-11-13 09:05:18",
+        "footerUpdate": "2026-11-13 09:37:39",
         "errorViewHidden": true,
         "errorTitle": "未找到该股票代码，请检查输入",
         "errorText": "确认代码是否正确，也可以直接在上方搜索股票名称。",
@@ -3429,9 +3458,9 @@
         "dataSource": "数据来源 东方财富 / 同花顺 公开行情",
         "footerUpdate": "—",
         "errorViewHidden": false,
-        "errorTitle": "未找到该股票代码，请检查输入",
-        "errorText": "代码 920185。确认代码是否正确，也可以直接在上方搜索股票名称或拼音。",
-        "errorCode": "NOT_FOUND",
+        "errorTitle": "北交所 / 老三板股票暂不支持（规则与沪深不同）",
+        "errorText": "可以返回搜索，换一只沪深 A 股查看。",
+        "errorCode": "NOT_SUPPORTED",
         "emptyViewHidden": true,
         "searchOptions": [
           "920185贝特瑞北交所"
@@ -3444,23 +3473,21 @@
         "staticMarker": true
       },
       "raw": {
-        "status": 404,
-        "contentType": "text/html; charset=utf-8",
-        "json": null,
-        "bodyHead": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Security-Policy\" content=\""
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "json": {
+          "ok": false,
+          "error": {
+            "code": "NOT_SUPPORTED",
+            "message": "北交所 / 老三板股票暂不支持（规则与沪深不同）"
+          }
+        },
+        "bodyHead": "{\"ok\":false,\"error\":{\"code\":\"NOT_SUPPORTED\",\"message\":\"北交所 / 老三板股票暂不支持（规则与沪深不同）\"}}"
       },
       "apiReqs": [
         {
           "path": "/api/suggest/get",
           "status": 200
-        },
-        {
-          "path": "/api/triggers",
-          "status": 404
-        },
-        {
-          "path": "/api/triggers",
-          "status": 404
         }
       ]
     }
@@ -3473,67 +3500,11 @@
   },
   "network": {
     "hosts": {
-      "cheris0419.github.io": 142,
+      "cheris0419.github.io": 131,
       "d.10jqka.com.cn": 24,
       "searchapi.eastmoney.com": 6
     },
-    "badResponses": [
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=999999",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=999999",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=123456",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=123456",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=920185",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=920185",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=900901",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=900901",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=abc",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=920185",
-        "status": 404,
-        "type": "Fetch"
-      },
-      {
-        "url": "https://cheris0419.github.io/api/triggers?code=920185",
-        "status": 404,
-        "type": "Fetch"
-      }
-    ],
-    "total": 172
+    "badResponses": [],
+    "total": 161
   }
 }

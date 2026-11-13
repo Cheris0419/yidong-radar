@@ -95,6 +95,7 @@ node scripts/test_site_engine.js   # 静态在线版引擎回归（25 项）
 | 接口端到端（字段 / 一致性 / 错误码 / 四板块 / 历史回放） | **1978 / 1978 PASS** | `python3 qa/e2e_checks.py` |
 | 前端 UI（移动 / 桌面 / 深浅主题 / 空错态 / 已超线 / 停牌） | **181 / 181 PASS** | `node qa/ui_check.mjs` |
 | 静态在线版引擎（与 Python 版口径一致） | **25 / 25 PASS** | `node scripts/test_site_engine.js` |
+| GitHub Pages 在线版公网验收（部署一致性 / 引擎独立核验 / 公网数据逐字段） | **1479 / 1479 PASS** | `python3 qa/online_accept.py` |
 
 验证报告与复现脚本见 [`qa/REPORT.md`](qa/REPORT.md)。以上命令均可在本地复跑；
 `docs/ci/` 提供可选的 GitHub Actions 自检 / Pages 工作流模板（复制到 `.github/workflows/` 即可启用）。

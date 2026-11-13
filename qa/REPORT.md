@@ -21,6 +21,9 @@
 | 阶段 2 | 后端接口端到端验收（契约/一致性/快照回放/四板块回归） | 初验 PASS 1942 / FAIL 3 → **修复后回归 PASS 1978 / FAIL 0**（见 §8.6） |
 | 阶段 2 | 前端 UI 验收（桌面/移动/日间/错误/已超线/停牌/搜索回归） | 初验 PASS 155 / FAIL 0 → **回归 PASS 181 / FAIL 0**，控制台 0 报错、0 个 4xx/5xx |
 | 回归 | P1/P2/P3 修复复验（task-4） | **5 项已修复并通过回归；剩余 1 项 P3（回放接口调试语义，可接受）**，详见 §8.6 |
+| 在线版 | GitHub Pages 部署一致性（公网 vs 仓库 site/ vs gh-pages） | **PASS 21 / FAIL 0** |
+| 在线版 | 引擎独立核验（site/engine.js vs QA 独立 Python 引擎，core/fixtures） | **PASS 231 / FAIL 0** |
+| 在线版 | 公网 UI + 数据逐字段比对（含冻结输入本地回放对比） | **PASS 1479 / FAIL 0**（UI 164 项 + 数据 1224 项 + 部署/引擎），详见 §10 |
 
 阶段 1 结论：**两个历史快照的全部期望项均被独立复现**（误差 ≤0.01，容差 ±0.02）。
 仅 B 快照 T+6、T+10 两处触发涨幅存在 **+0.01** 的舍入级差异（原因见 §7.2），不影响任何触发价、窗口 base、清零状态与同向异动判定。
@@ -445,4 +448,130 @@ B 的 T+1..T+10 线值、`reset10=2026-08-07`、`last_trigger=2026-07-23 100.04%
 | `ui_check.mjs` / `ui_check.log` | UI 验收脚本与日志（181 项 PASS，含搜索/错误态回归） |
 | `mock_server.py` / `fixtures/` | QA 专用受控状态 mock（已超线/停牌），不修改前后端代码 |
 | `screens/` | 13 张验收截图（桌面/移动/深浅主题/错误/科创板/搜索回归/已超线/停牌） |
+| `online_accept.py` / `online_accept.log` | **在线版**验收：部署一致性 + 引擎独立核验 + 公网数据逐字段比对 |
+| `pages_check.mjs` / `pages_check.log` | **在线版**公网 UI/接口验收（headless Chrome，页面内静态接口 payload → `pages_observed.json`） |
+| `site_engine_dump.cjs` / `site_engine_dump.json` | 直接 require 仓库 `site/engine.js` + core/fixtures 的离线复算结果（供与 Python 引擎比对） |
+| `pages_expected.json` | QA 用同花顺公开接口 + 独立引擎计算的在线版期望值 |
 | `cache/` | 东财/同花顺行情原始响应缓存，离线可重复复算 |
+
+---
+
+## 10. GitHub Pages 在线版验收
+
+> 验收对象：<https://cheris0419.github.io/yidong-radar/>（gh-pages 分支，Pages legacy 构建）
+> 仓库：<https://github.com/Cheris0419/yidong-radar>（main `8f9804e` / gh-pages `17befd5`）
+> 验收时间：2026-11-13 09:20–09:38（跨 09:30 开盘，属盘中行情漂移场景，见 §10.4）
+> 脚本：`qa/online_accept.py`（编排）、`qa/pages_check.mjs`（公网 headless Chrome）、
+> `qa/site_engine_dump.cjs`（离线引擎核验）；日志：`qa/online_accept.log`、`qa/pages_check.log`；
+> 截图：`qa/screens/pages-*.png`（18 张）。
+
+**复现命令**
+
+```bash
+cd yidong-radar
+python3 qa/online_accept.py     # 一次跑完：部署一致性 + 引擎独立核验 + 公网 UI + 数据比对
+# 或分步：
+node qa/pages_check.mjs         # 公网 UI/接口验收 + 截图 + pages_observed.json
+node qa/site_engine_dump.cjs    # 离线 site/engine.js 复算
+```
+
+### 10.1 验收结论
+
+| 验收项 | 结果 |
+|---|---|
+| 1) 公网可用性（桌面 1280×900 / 移动 390×844 / 搜索 / 错误态） | **PASS 164 / FAIL 0**（pages_check 内置断言含 console/网络/横向溢出） |
+| 2) 部署一致性（公网 vs 本地 site/ vs gh-pages vs main） | **PASS 21 / FAIL 0** |
+| 3) 引擎独立核验（`site/engine.js` vs QA 独立 Python 引擎） | **PASS 231 / FAIL 0**（fixtures A/B 逐字段） |
+| 4) 公网静态接口 payload vs QA 独立重算（3 只股票逐字段） | **PASS 1224 / FAIL 0**（含本地 Python 服务冻结输入回放对比） |
+| **合计** | **PASS 1479 / FAIL 0**（`python3 qa/online_accept.py` exit 0） |
+| **P0** | **无** |
+| **P1** | **无（本轮发现 1 个在线版 P1，Lead 修复后回归通过，见 §10.4）** |
+
+### 10.2 公网可用性（headless Chrome 实测）
+
+- `?code=000993`：股票名/现价/涨跌幅、深证综指、三张读数卡、10 行触发表全部渲染；
+  **rows = T+0..T+9**，首行 T+0 且带「当日」chip，`data-view=ready`；**0 console error、0 未捕获异常、0 4xx/5xx**；
+  桌面与移动均**无横向溢出**；移动端触发表可滚动且不撑破页面。
+- `?code=600664`（沪主板）、`?code=688981`（科创板）：同样正常渲染（科创板同向红线 3 次、+30% 文案）。
+- 错误态：`?code=999999`/`123456` → `NOT_FOUND`；`?code=920185`（北交所，搜索联想可见）→
+  `NOT_SUPPORTED`「北交所 / 老三板股票暂不支持」；`?code=900901`（B 股）→ `NOT_SUPPORTED`「B 股暂不支持」；
+  `?code=abc` → `BAD_CODE`「请检查股票代码」。**错误页面均无真实 `/api` 网络请求、0 console error**。
+- 搜索（东方财富 suggest JSONP，浏览器直连）：
+  - 「中芯国际」→ 联想「中芯国际 · 科创板」→ Enter 选中后正常加载 688981；
+  - 「nh」→ 主板联想（宁沪高速/南华期货/南华生物…）；「rh」→ 主板联想（仁和药业/日海智能…）；
+  - 「贝特瑞」→ 联想「贝特瑞 · 北交所」→ 选中后展示 **NOT_SUPPORTED** 错误态（符合预期）。
+- 网络：实际请求主机仅 `cheris0419.github.io`（本站资源）、`d.10jqka.com.cn`（行情，CORS 允许）、
+  `searchapi.eastmoney.com`（搜索 JSONP）；**未请求东财 push2/push2his**，无第三方 CDN。
+- 页面 HTML 源 `<title>` 为「异动雷达 · 严重异动监管触发线**（在线版）**」；JS 运行后动态标题与本地版一致（共享 UI 行为）。
+
+### 10.3 部署一致性与引擎独立核验
+
+**部署一致性（21 项 PASS）**
+- 公网 8 个关键资源（index.html/styles.css/app.js/calendar.js/engine.js/data.js/static-api.js/favicon.svg）
+  与本地仓库 `site/`、`origin/gh-pages` 分支**逐字节完全一致**；gh-pages 分支仅含这 8 个站点文件。
+- GitHub 仓库：公开、默认分支 main、homepage 指向 Pages 地址；main 分支 53 个文件；
+  README/`docs/METHODOLOGY.md`/`docs/BACKEND-CONTRACT.md`/`docs/DEPLOYMENT.md`/`qa/REPORT.md`/
+  `core/engine.py`/`core/fixtures/*`/`site/*`/`scripts/test_site_engine.js` 均已收录，且 main 分支内容与本地一致
+  （本轮 §10 更新为本地新增，待 Lead 推送）。
+- README 指向在线地址；`docs/DEPLOYMENT.md` 描述 gh-pages 部署；`docs/screenshots/online-*.png` 为有效 PNG。
+
+**引擎独立核验（231 项 PASS）**
+- 不依赖 Lead 的 `scripts/test_site_engine.js`：QA 自行编写 `qa/site_engine_dump.cjs`，
+  直接 `require` 仓库 `site/engine.js` + `site/calendar.js`，用 `core/fixtures` 历史日 K **自行构造输入**
+  复算快照 A（000993 @ 2026-09-18 09:54:36）与 B（600664 @ 2026-08-13 18:20），
+  与 **QA 自己实现的 Python 引擎**（`qa/validate_engine.py`，与 Lead 代码无关）逐字段比对：
+  rows（key/日期/周几/is_today/触发价/触发涨幅/binding/规则价格与涨幅）、summary dev10/dev30（value、
+  stock_change、index_change、remaining、progress、window、base、trigger_price）、同向次数、reset 清零/最近触发，
+  **误差 ≤0.011 全部一致**；且同时复现用户截图参考值（A/B）。
+
+**公网数据逐字段核验（1224 项 PASS）**
+- 在公网页面上下文内调用被 `static-api.js` 拦截的 `fetch('/api/triggers?code=…')`，拿静态接口原始 JSON；
+  与 QA 用**同花顺公开接口**（站点同源数据）独立重算的期望值逐字段比对（3 只股票、误差 ≤0.02）：
+  - 000993（深主板）、600664（沪主板）、688981（科创板）：rows 10 行 T+0..T+9、触发价/触发涨幅/
+    binding/10日线/30日线/同向线、summary 三卡、reset、risk 徽标内部一致性、契约顶层 8 字段结构、
+    snapshot 阶段/show_t0/时间格式、meta 字段 —— 全部一致。
+- 与**本地 Python 服务 8765** 的第二参考比对：盘中用「冻结快照输入的历史回放」
+  （`/api/triggers?code=…&at=<页面时间>&price=<页面现价>&index_price=<页面指数>`）与公网 payload 逐字段比对，
+  通过（见 §10.4 盘中漂移说明）。
+
+### 10.4 问题清单
+
+| 优先级 | 编号 | 问题 | 状态 |
+|---|---|---|---|
+| **P1** | P1-Online-1 | **静态版错误路径命中真实网络**：`site/static-api.js` 拦截器内 `YDRData.buildTriggerPayload(code)` 对北交所/B 股/非法代码会**同步抛错**（`classifyCode` 在返回 Promise 前 throw），同步异常被外层 try/catch 兜底吞掉 → 误判为非 /api 请求 → 回落真实 `fetch` → GitHub Pages 对 `/api/...` 返回 404 HTML → 前端显示 `NOT_FOUND`（北交所/B 股错误码与提示不正确），且每次错误页产生 1~2 次 `https://cheris0419.github.io/api/triggers` 的 404 请求与 console 资源错误 | ✅ **已修复并回归通过**（main `8f9804e` / gh-pages `17befd5`）：拦截器改为 `Promise.resolve().then(...)`，同步错误统一走 `errorResponse`，返回契约 JSON。实测 `920185→NOT_SUPPORTED`、`900901→NOT_SUPPORTED`、`999999/123456→NOT_FOUND`，**无真实 `/api` 请求、0 console error**；数据态无回归 |
+| 信息 | 误报说明 | 本轮早期 `pages_check` 曾报 2 条自检 FAIL（「无真实 /api 请求」「无 4xx/5xx」），经核查为**检查脚本自身缺陷**：① `/api` 断言未限定「同源 + path 前缀」（东方财富 `searchapi.eastmoney.com/api/suggest` 属预期第三方请求）；② 4xx 断言实现错误（`badResponses` 实为空却判为失败）。**已修正**，修正后为 PASS 164 / FAIL 0 | ✅ 已修正（记录备查） |
+| 观察 | 行情漂移 | 验收跨 09:30 开盘，抓取期望值与页面加载时现价会小幅变化（如 12.04→12.07）。已设计「按页面实时输入独立重算」策略：漂移时用页面 payload 的 price/prev_close/index_price 与同一历史序列重算后比对，结果一致 | 非缺陷 |
+| 观察 | 环境限制 | 本地 Python 服务 8765 在部分时段因 push2 行情不可达无法取实时数；已用「冻结输入历史回放」完成引擎侧对比（与本次验收的静态版引擎独立对照） | 非缺陷 |
+| 信息 | 标题动态覆盖 | HTML 源 title 含「（在线版）」（部署校验项）；JS 运行后动态标题与本地版一致（共享 UI 行为） | 非缺陷 |
+
+**P0：无。P1：无（1 个在线版 P1 已修复并回归通过）。**
+
+### 10.5 截图（qa/screens/）
+
+| 截图 | 场景 |
+|---|---|
+| [pages-desktop-home.png](screens/pages-desktop-home.png) | 桌面空态首页（在线版） |
+| [pages-desktop-000993.png](screens/pages-desktop-000993.png) | 桌面数据态 000993（盘中，T+0 当日） |
+| [pages-desktop-600664.png](screens/pages-desktop-600664.png) | 桌面数据态 600664（沪主板） |
+| [pages-desktop-688981.png](screens/pages-desktop-688981.png) | 桌面数据态 688981（科创板） |
+| [pages-desktop-light.png](screens/pages-desktop-light.png) | 日间主题 |
+| [pages-mobile-home.png](screens/pages-mobile-home.png) | 移动端空态（390×844） |
+| [pages-mobile-000993.png](screens/pages-mobile-000993.png) | 移动端数据态 |
+| [pages-error-999999.png](screens/pages-error-999999.png) | 错误态 NOT_FOUND |
+| [pages-error-bse.png](screens/pages-error-bse.png) | 北交所错误态 NOT_SUPPORTED |
+| [pages-error-bshare.png](screens/pages-error-bshare.png) | B 股错误态 NOT_SUPPORTED |
+| [pages-error-badcode.png](screens/pages-error-badcode.png) | 非法 URL code → BAD_CODE |
+| [pages-search-star.png](screens/pages-search-star.png) | 搜索「中芯国际」联想（科创板） |
+| [pages-search-nh.png](screens/pages-search-nh.png) | 搜索「nh」联想（主板） |
+| [pages-search-rh.png](screens/pages-search-rh.png) | 搜索「rh」联想（主板） |
+| [pages-search-bse.png](screens/pages-search-bse.png) | 搜索「贝特瑞」联想（北交所） |
+| [pages-search-star-loaded.png](screens/pages-search-star-loaded.png) | 选中科创板股票后正常加载 |
+| [pages-search-bse-selected.png](screens/pages-search-bse-selected.png) | 选中北交所股票 → NOT_SUPPORTED 错误态 |
+| [pages-error-123456.png](screens/pages-error-123456.png) | 不存在代码 → NOT_FOUND |
+
+### 10.6 在线版验收结论
+
+纯静态 GitHub Pages 版本**可用、与仓库/部署一致、引擎口径与 Python 版一致**；
+公网移动/桌面渲染、搜索（含科创板/北交所）、错误态、深浅主题均通过，且**无 console error、无意外 4xx/5xx、
+无第三方 CDN、不依赖东财 push2**（符合纯静态直连同花顺 + 东财 suggest JSONP 的设计）。
+本轮发现的 1 个 P1（静态 API 错误路径命中真实网络）已由 Lead 修复并回归通过；**在线版验收通过**。
