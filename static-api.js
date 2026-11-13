@@ -31,7 +31,11 @@
     if (!code) return jsonResponse({ ok: false, error: { code: 'BAD_CODE', message: '缺少 code 参数' } }, 400);
     var hit = triggerCache[code];
     if (hit && Date.now() < hit.expire) return jsonResponse(hit.payload);
-    return window.YDRData.buildTriggerPayload(code).then(function (data) {
+    // 注意：buildTriggerPayload 可能同步抛错（如北交所/B股），必须包成 Promise，
+    // 否则会被下方 fetch 兜底逻辑误落到真实网络请求。
+    return Promise.resolve().then(function () {
+      return window.YDRData.buildTriggerPayload(code);
+    }).then(function (data) {
       var payload = { ok: true, data: data };
       triggerCache[code] = { expire: Date.now() + TRIGGER_TTL, payload: payload };
       return jsonResponse(payload);
@@ -45,7 +49,9 @@
   function handleSearch(q) {
     q = String(q || '').trim();
     if (!q) return jsonResponse({ ok: false, error: { code: 'BAD_CODE', message: '请输入股票代码、名称或拼音首字母' } }, 400);
-    return window.YDRData.search(q).then(function (items) {
+    return Promise.resolve().then(function () {
+      return window.YDRData.search(q);
+    }).then(function (items) {
       return jsonResponse({ ok: true, data: { items: items } });
     }).catch(errorResponse);
   }
